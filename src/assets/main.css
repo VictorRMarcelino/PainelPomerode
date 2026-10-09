@@ -1,36 +1,101 @@
-@import './base.css';
 @import "tailwindcss";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* Cores por tema: escuro (padrão, destaque branco) e claro. Os gráficos usam os mesmos
+   azuis nos dois temas; as cores neutras deles ficam em components/graficos/configurar.ts. */
+@theme inline {
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-fundo: var(--fundo);
+  --color-cartao: var(--cartao);
+  --color-borda: var(--borda);
+  --color-texto: var(--texto);
+  --color-suave: var(--suave);
+  --color-apagado: var(--apagado);
+  --color-azul: var(--azul);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+@layer base {
+  :root,
+  :root[data-tema="escuro"] {
+    --fundo: #08090c;
+    --cartao: #0f1218;
+    --borda: #1e2430;
+    --texto: #f5f7fa;
+    --suave: #a3acba;
+    --apagado: #6f7888;
+    --azul: #5b95ec;
+    color-scheme: dark;
   }
-}
 
-@media (min-width: 1024px) {
+  :root[data-tema="claro"] {
+    --fundo: #f3f4f6;
+    --cartao: #ffffff;
+    --borda: #e2e5ea;
+    --texto: #0d1117;
+    --suave: #4b5563;
+    --apagado: #6b7280;
+    --azul: #1f56d8;
+    color-scheme: light;
+  }
+
+  html {
+    background-color: var(--fundo);
+  }
+
   body {
-    display: flex;
-    place-items: center;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    transition:
+      background-color 0.25s ease,
+      color 0.25s ease;
   }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+@utility cartao {
+  background-color: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: 0.75rem;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Troca de exercício: o conteúdo antigo sobe e some, o novo entra de baixo. */
+.exercicio-enter-active,
+.exercicio-leave-active {
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
+}
+.exercicio-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.exercicio-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* Loading: só aparece se a troca demorar, para não piscar quando os dados já estão prontos. */
+.carregando-enter-active {
+  transition: opacity 0.2s ease 0.15s;
+}
+.carregando-leave-active {
+  transition: opacity 0.15s ease;
+}
+.carregando-enter-from,
+.carregando-leave-to {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
   }
 }

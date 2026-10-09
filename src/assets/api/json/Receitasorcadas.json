@@ -1,0 +1,1450 @@
+{
+  "status": "ok",
+  "retorno": [
+    {
+      "contaCodigo": "4111250010000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Principal",
+      "valorOrcado": "9950000.00"
+    },
+    {
+      "contaCodigo": "4111250020000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Multas e Juros",
+      "valorOrcado": "71000.00"
+    },
+    {
+      "contaCodigo": "4111250030000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Dívida Ativa",
+      "valorOrcado": "450000.00"
+    },
+    {
+      "contaCodigo": "4111250040000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "100000.00"
+    },
+    {
+      "contaCodigo": "4111253010000000000",
+      "contaDescricao": "impostos sobre transmissão \"inter vivos\" de bens imóveis e de direitos reais sobre imóveis - Principal",
+      "valorOrcado": "6000000.00"
+    },
+    {
+      "contaCodigo": "4111303110000000000",
+      "contaDescricao": "Imposto sobre a renda - retido na fonte - trabalho - Principal",
+      "valorOrcado": "13550000.00"
+    },
+    {
+      "contaCodigo": "4111303410000000000",
+      "contaDescricao": "Imposto sobre a renda - retido na fonte - outros rendimentos - Principal",
+      "valorOrcado": "2000000.00"
+    },
+    {
+      "contaCodigo": "4111451110000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Principal",
+      "valorOrcado": "22400000.00"
+    },
+    {
+      "contaCodigo": "4111451120000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Multas e Juros",
+      "valorOrcado": "220000.00"
+    },
+    {
+      "contaCodigo": "4111451130000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Dívida Ativa",
+      "valorOrcado": "360000.00"
+    },
+    {
+      "contaCodigo": "4111451140000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "320000.00"
+    },
+    {
+      "contaCodigo": "4112101010100000000",
+      "contaDescricao": "Taxa pelo exercício do poder de polícia - Principal",
+      "valorOrcado": "1550000.00"
+    },
+    {
+      "contaCodigo": "4112101010200000000",
+      "contaDescricao": "Taxa ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Principal",
+      "valorOrcado": "436500.00"
+    },
+    {
+      "contaCodigo": "4112101010200000000",
+      "contaDescricao": "Taxa ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Principal",
+      "valorOrcado": "291000.00"
+    },
+    {
+      "contaCodigo": "4112101020100000000",
+      "contaDescricao": "Taxas pelo exercício do poder de polícia - Multas e Juros",
+      "valorOrcado": "22000.00"
+    },
+    {
+      "contaCodigo": "4112101020200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Multas e Juros",
+      "valorOrcado": "1500.00"
+    },
+    {
+      "contaCodigo": "4112101020200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Multas e Juros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4112101030100000000",
+      "contaDescricao": "Taxas pelo exercício do poder de polícia - Divida Ativa",
+      "valorOrcado": "148000.00"
+    },
+    {
+      "contaCodigo": "4112101030200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Divida Ativa",
+      "valorOrcado": "600.00"
+    },
+    {
+      "contaCodigo": "4112101030200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Divida Ativa",
+      "valorOrcado": "400.00"
+    },
+    {
+      "contaCodigo": "4112101040100000000",
+      "contaDescricao": "Taxas pelo exercício do poder de polícia - Dívida Ativa Multas e Juros",
+      "valorOrcado": "125000.00"
+    },
+    {
+      "contaCodigo": "4112101040200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Divida Ativa Multas e Juros",
+      "valorOrcado": "600.00"
+    },
+    {
+      "contaCodigo": "4112101040200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Divida Ativa Multas e Juros",
+      "valorOrcado": "400.00"
+    },
+    {
+      "contaCodigo": "4112150010000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Principal",
+      "valorOrcado": "180000.00"
+    },
+    {
+      "contaCodigo": "4112150020000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Multas e Juros",
+      "valorOrcado": "4000.00"
+    },
+    {
+      "contaCodigo": "4112150030000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Dívida Ativa",
+      "valorOrcado": "26500.00"
+    },
+    {
+      "contaCodigo": "4112150040000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "24500.00"
+    },
+    {
+      "contaCodigo": "4112201010100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Principal",
+      "valorOrcado": "435000.00"
+    },
+    {
+      "contaCodigo": "4112201010200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Principal",
+      "valorOrcado": "471500.00"
+    },
+    {
+      "contaCodigo": "4112201010300000000",
+      "contaDescricao": "Taxa Meio Ambiente - Infrações Ambientais - Principal",
+      "valorOrcado": "8000.00"
+    },
+    {
+      "contaCodigo": "4112201010400000000",
+      "contaDescricao": "Taxa Meio Ambiente - CRA/ Lei 368/2019 (Certidão de \nRegularização Ambiental) - Principal",
+      "valorOrcado": "46000.00"
+    },
+    {
+      "contaCodigo": "4112201010500000000",
+      "contaDescricao": "Taxa LC 386/2020 - GETRAN - Principal",
+      "valorOrcado": "1900.00"
+    },
+    {
+      "contaCodigo": "4112201010600000000",
+      "contaDescricao": "Taxa de Coleta de Lixo - SAMAE - Principal",
+      "valorOrcado": "6294000.00"
+    },
+    {
+      "contaCodigo": "4112201020100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Multas e Juros",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "contaCodigo": "4112201020200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Multas e Juros",
+      "valorOrcado": "650.00"
+    },
+    {
+      "contaCodigo": "4112201020300000000",
+      "contaDescricao": "Taxa Meio Ambiente - Infrações Ambientais - Multas e Juros",
+      "valorOrcado": "100.00"
+    },
+    {
+      "contaCodigo": "4112201020400000000",
+      "contaDescricao": "Taxa Meio Ambiente - CRA/ Lei 368/2019 (Certidão de \nRegularização Ambiental) - Multas e Juros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4112201020500000000",
+      "contaDescricao": "Taxa LC 386/2020 - GETRAN - Multas e Juros",
+      "valorOrcado": "100.00"
+    },
+    {
+      "contaCodigo": "4112201030100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Dívida Ativa",
+      "valorOrcado": "28000.00"
+    },
+    {
+      "contaCodigo": "4112201030200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Dívida Ativa",
+      "valorOrcado": "150.00"
+    },
+    {
+      "contaCodigo": "4112201030300000000",
+      "contaDescricao": "Taxa Meio Ambiente - Infrações Ambientais - Dívida Ativa",
+      "valorOrcado": "200.00"
+    },
+    {
+      "contaCodigo": "4112201030600000000",
+      "contaDescricao": "Taxa de Coleta de Lixo - SAMAE  - Divida Ativa",
+      "valorOrcado": "120000.00"
+    },
+    {
+      "contaCodigo": "4112201040100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "15000.00"
+    },
+    {
+      "contaCodigo": "4112201040300000000",
+      "contaDescricao": "Taxa Meio Ambiente - Infrações Ambientais - Dívida Ativa - multas e juros",
+      "valorOrcado": "200.00"
+    },
+    {
+      "contaCodigo": "4113153010000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Principal",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4113153020000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Multas e Juros",
+      "valorOrcado": "2000.00"
+    },
+    {
+      "contaCodigo": "4113153030000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Dívida Ativa",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4113153040000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4121501110100000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - PMP",
+      "valorOrcado": "7825200.00"
+    },
+    {
+      "contaCodigo": "4121501110200000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - FMS",
+      "valorOrcado": "3200000.00"
+    },
+    {
+      "contaCodigo": "4121501110300000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - CMV",
+      "valorOrcado": "297000.00"
+    },
+    {
+      "contaCodigo": "4121501110400000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - SAMAE",
+      "valorOrcado": "300000.00"
+    },
+    {
+      "contaCodigo": "4121501110700000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - FAP",
+      "valorOrcado": "39000.00"
+    },
+    {
+      "contaCodigo": "4121501210100000000",
+      "contaDescricao": "Contribuição para o rpps",
+      "valorOrcado": "395000.00"
+    },
+    {
+      "contaCodigo": "4124150010000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Principal",
+      "valorOrcado": "3746000.00"
+    },
+    {
+      "contaCodigo": "4124150020000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Multas e Juros",
+      "valorOrcado": "1200.00"
+    },
+    {
+      "contaCodigo": "4124150030000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Dívida Ativa",
+      "valorOrcado": "6000.00"
+    },
+    {
+      "contaCodigo": "4124150040000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "4800.00"
+    },
+    {
+      "contaCodigo": "4131101110000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Principal",
+      "valorOrcado": "154000.00"
+    },
+    {
+      "contaCodigo": "4131101120000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Multas e Juros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4131101130000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Dívida Ativa",
+      "valorOrcado": "12000.00"
+    },
+    {
+      "contaCodigo": "4131101140000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "9000.00"
+    },
+    {
+      "contaCodigo": "4132101110100000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Recursos Próprios",
+      "valorOrcado": "3000000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "50000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "30000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "20150.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "25000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "150000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "30000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "163000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "30000.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "500.00"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorOrcado": "15000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "500.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "300000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "40000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "600.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorOrcado": "2000.00"
+    },
+    {
+      "contaCodigo": "4132101110400000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Saúde",
+      "valorOrcado": "800000.00"
+    },
+    {
+      "contaCodigo": "4132101110400000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Saúde",
+      "valorOrcado": "500.00"
+    },
+    {
+      "contaCodigo": "4132101110400000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Saúde",
+      "valorOrcado": "10000.00"
+    },
+    {
+      "contaCodigo": "4132101110400000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Saúde",
+      "valorOrcado": "2000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "300.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "2000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "100.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "200.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "200.00"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorOrcado": "10000.00"
+    },
+    {
+      "contaCodigo": "4132101110600000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Samae",
+      "valorOrcado": "120000.00"
+    },
+    {
+      "contaCodigo": "4132101110700000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (80%/10%/10%)",
+      "valorOrcado": "8000.00"
+    },
+    {
+      "contaCodigo": "4132101110700000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (80%/10%/10%)",
+      "valorOrcado": "8150.00"
+    },
+    {
+      "contaCodigo": "4132101110700000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (80%/10%/10%)",
+      "valorOrcado": "64000.00"
+    },
+    {
+      "contaCodigo": "4132101110800000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (70%/15%/15%)",
+      "valorOrcado": "13350.00"
+    },
+    {
+      "contaCodigo": "4132101110800000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (70%/15%/15%)",
+      "valorOrcado": "13350.00"
+    },
+    {
+      "contaCodigo": "4132101110800000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (70%/15%/15%)",
+      "valorOrcado": "62000.00"
+    },
+    {
+      "contaCodigo": "4132101110900000000",
+      "contaDescricao": "Remuneração de depósitos bancários - FUNREBOM (60%/40%)",
+      "valorOrcado": "222000.00"
+    },
+    {
+      "contaCodigo": "4132101110900000000",
+      "contaDescricao": "Remuneração de depósitos bancários - FUNREBOM (60%/40%)",
+      "valorOrcado": "148000.00"
+    },
+    {
+      "contaCodigo": "4132101111000000000",
+      "contaDescricao": "Remuneração de depósitos bancários - FIA",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4132101111000000000",
+      "contaDescricao": "Remuneração de depósitos bancários - FIA",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4132104010100000000",
+      "contaDescricao": "Remuneração dos recursos do regime próprio de previdência social - RPPS - Renda Fixa",
+      "valorOrcado": "700000.00"
+    },
+    {
+      "contaCodigo": "4132104010100000000",
+      "contaDescricao": "Remuneração dos recursos do regime próprio de previdência social - RPPS - Renda Fixa",
+      "valorOrcado": "93600.00"
+    },
+    {
+      "contaCodigo": "4132104010200000000",
+      "contaDescricao": "Remuneração dos recursos do regime próprio de previdência social - RPPS - Renda Variável",
+      "valorOrcado": "250000.00"
+    },
+    {
+      "contaCodigo": "4151101010000000000",
+      "contaDescricao": "Receita industrial - Principal",
+      "valorOrcado": "978000.00"
+    },
+    {
+      "contaCodigo": "4161102010100000000",
+      "contaDescricao": "Inscrição em concursos e processos seletivos (PMP) - principal",
+      "valorOrcado": "40000.00"
+    },
+    {
+      "contaCodigo": "4169950130000000000",
+      "contaDescricao": "Serviços de saneamento básico - abastecimento de água. - Dívida Ativa",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4169999010100000000",
+      "contaDescricao": "Outros Serviços - SAMAE",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4169999010200000000",
+      "contaDescricao": "Outros Serviços - Demais Serviços",
+      "valorOrcado": "10000.00"
+    },
+    {
+      "contaCodigo": "4171151110000000000",
+      "contaDescricao": "Cota-parte do fundo de participação dos municípios - cota mensal - Principal",
+      "valorOrcado": "41500000.00"
+    },
+    {
+      "contaCodigo": "4171151210000000000",
+      "contaDescricao": "Cota-parte do fundo de participação dos municípios - cotas extraordinárias - Principal",
+      "valorOrcado": "4287000.00"
+    },
+    {
+      "contaCodigo": "4171152010000000000",
+      "contaDescricao": "Cota-parte do imposto sobre a propriedade territorial rural - Principal",
+      "valorOrcado": "15000.00"
+    },
+    {
+      "contaCodigo": "4171251010000000000",
+      "contaDescricao": "Cota-parte da compensação financeira pela exploração de recursos minerais - cfem - Principal",
+      "valorOrcado": "393000.00"
+    },
+    {
+      "contaCodigo": "4171252110000000000",
+      "contaDescricao": "Cota-parte da compensação financeira pela produção de petróleo - lei nº 7.990/90 - Principal",
+      "valorOrcado": "7700000.00"
+    },
+    {
+      "contaCodigo": "4171252410000000000",
+      "contaDescricao": "Cota-parte do fundo especial do petróleo - fep - Principal",
+      "valorOrcado": "853000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "3827500.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "693000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "994085.13"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "216000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "1973000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "250000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "600000.00"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorOrcado": "500000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "342000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "431000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "512000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "262000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "530000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "5395.97"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "500000.00"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorOrcado": "100000.00"
+    },
+    {
+      "contaCodigo": "4171350310000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - vigilância em saúde - Principal",
+      "valorOrcado": "79000.00"
+    },
+    {
+      "contaCodigo": "4171350310000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - vigilância em saúde - Principal",
+      "valorOrcado": "21000.00"
+    },
+    {
+      "contaCodigo": "4171350310000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - vigilância em saúde - Principal",
+      "valorOrcado": "27000.00"
+    },
+    {
+      "contaCodigo": "4171350310000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - vigilância em saúde - Principal",
+      "valorOrcado": "197000.00"
+    },
+    {
+      "contaCodigo": "4171350410000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - assistência farmacêutica - Principal",
+      "valorOrcado": "250000.00"
+    },
+    {
+      "contaCodigo": "4171450010000000000",
+      "contaDescricao": "Transferências do salário-educação - Principal",
+      "valorOrcado": "2961000.00"
+    },
+    {
+      "contaCodigo": "4171452010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de alimentação escolar - pnae - Principal",
+      "valorOrcado": "534000.00"
+    },
+    {
+      "contaCodigo": "4171452010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de alimentação escolar - pnae - Principal",
+      "valorOrcado": "52000.00"
+    },
+    {
+      "contaCodigo": "4171452010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de alimentação escolar - pnae - Principal",
+      "valorOrcado": "323000.00"
+    },
+    {
+      "contaCodigo": "4171452010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de alimentação escolar - pnae - Principal",
+      "valorOrcado": "136000.00"
+    },
+    {
+      "contaCodigo": "4171453010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de apoio ao transporte do escolar - pnate - Principal",
+      "valorOrcado": "13400.00"
+    },
+    {
+      "contaCodigo": "4171499010000000000",
+      "contaDescricao": "Outras transferências diretas do fundo nacional do desenvolvimento da educação - fnde - Principal",
+      "valorOrcado": "830000.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "12000.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "7700.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "68000.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "54000.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "12000.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "42000.00"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "18000.00"
+    },
+    {
+      "contaCodigo": "4171958010000000000",
+      "contaDescricao": "Transferência obrigatória decorrente da lei complementar n° 176/2020 - Principal",
+      "valorOrcado": "158000.00"
+    },
+    {
+      "contaCodigo": "4171960010000000000",
+      "contaDescricao": "Transferências da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022 - Principal",
+      "valorOrcado": "250000.00"
+    },
+    {
+      "contaCodigo": "4172150010000000000",
+      "contaDescricao": "Cota-parte do ICMS - Principal",
+      "valorOrcado": "89000000.00"
+    },
+    {
+      "contaCodigo": "4172151010000000000",
+      "contaDescricao": "Cota-parte do IPVA - Principal",
+      "valorOrcado": "10000000.00"
+    },
+    {
+      "contaCodigo": "4172152010000000000",
+      "contaDescricao": "Cota-parte do IPI - municípios - Principal",
+      "valorOrcado": "1100000.00"
+    },
+    {
+      "contaCodigo": "4172153010000000000",
+      "contaDescricao": "Cota-parte da contribuição de intervenção no domínio econômico - Principal",
+      "valorOrcado": "44000.00"
+    },
+    {
+      "contaCodigo": "4172350010000000000",
+      "contaDescricao": "Transferências de recursos do sistema único de saúde - SUS - Principal",
+      "valorOrcado": "12173.25"
+    },
+    {
+      "contaCodigo": "4172350010000000000",
+      "contaDescricao": "Transferências de recursos do sistema único de saúde - SUS - Principal",
+      "valorOrcado": "762000.00"
+    },
+    {
+      "contaCodigo": "4172350010000000000",
+      "contaDescricao": "Transferências de recursos do sistema único de saúde - SUS - Principal",
+      "valorOrcado": "150000.00"
+    },
+    {
+      "contaCodigo": "4172350010000000000",
+      "contaDescricao": "Transferências de recursos do sistema único de saúde - SUS - Principal",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "contaCodigo": "4172499010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "146952.86"
+    },
+    {
+      "contaCodigo": "4172499010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "149980.46"
+    },
+    {
+      "contaCodigo": "4172951010000000000",
+      "contaDescricao": "Transferências de estados destinadas à assistência social - Principal",
+      "valorOrcado": "2900.00"
+    },
+    {
+      "contaCodigo": "4172951010000000000",
+      "contaDescricao": "Transferências de estados destinadas à assistência social - Principal",
+      "valorOrcado": "96505.38"
+    },
+    {
+      "contaCodigo": "4172951010000000000",
+      "contaDescricao": "Transferências de estados destinadas à assistência social - Principal",
+      "valorOrcado": "41000.00"
+    },
+    {
+      "contaCodigo": "4172951010000000000",
+      "contaDescricao": "Transferências de estados destinadas à assistência social - Principal",
+      "valorOrcado": "83800.00"
+    },
+    {
+      "contaCodigo": "4172999010000000000",
+      "contaDescricao": "Outras transferências dos estados e df - Principal",
+      "valorOrcado": "300000.00"
+    },
+    {
+      "contaCodigo": "4172999010000000000",
+      "contaDescricao": "Outras transferências dos estados e df - Principal",
+      "valorOrcado": "100140.00"
+    },
+    {
+      "contaCodigo": "4172999010000000000",
+      "contaDescricao": "Outras transferências dos estados e df - Principal",
+      "valorOrcado": "175000.00"
+    },
+    {
+      "contaCodigo": "4174199010000000000",
+      "contaDescricao": "Outras transferências de instituições privadas - Principal",
+      "valorOrcado": "20000.00"
+    },
+    {
+      "contaCodigo": "4174199010000000000",
+      "contaDescricao": "Outras transferências de instituições privadas - Principal",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4175150010100000000",
+      "contaDescricao": "Transferências de recursos do fundo de manutenção e desenvolvimento da educação básica e de valorização dos profissionais da educação - FUNDEB - Principal",
+      "valorOrcado": "41120000.00"
+    },
+    {
+      "contaCodigo": "4175150010100000000",
+      "contaDescricao": "Transferências de recursos do fundo de manutenção e desenvolvimento da educação básica e de valorização dos profissionais da educação - FUNDEB - Principal",
+      "valorOrcado": "6880000.00"
+    },
+    {
+      "contaCodigo": "4175150010200000000",
+      "contaDescricao": "Transferências FUNDEB  - Principal (Ação Judicial-0311732-94.2017.8.24.0023)",
+      "valorOrcado": "180000.00"
+    },
+    {
+      "contaCodigo": "4175150010200000000",
+      "contaDescricao": "Transferências FUNDEB  - Principal (Ação Judicial-0311732-94.2017.8.24.0023)",
+      "valorOrcado": "20000.00"
+    },
+    {
+      "contaCodigo": "4179199010000000000",
+      "contaDescricao": "Outras transferências de pessoas físicas - Principal",
+      "valorOrcado": "20000.00"
+    },
+    {
+      "contaCodigo": "4179199010000000000",
+      "contaDescricao": "Outras transferências de pessoas físicas - Principal",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4191101020000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Multas e Juros",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4191101030000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Dívida Ativa",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4191101040000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "contaCodigo": "4191106110100000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Infrações Ambientais - Principal",
+      "valorOrcado": "400.00"
+    },
+    {
+      "contaCodigo": "4191106110200000000",
+      "contaDescricao": "Multas administrativas por danos ambientais:  FMMA - Licenças Ambientais - Principal",
+      "valorOrcado": "100.00"
+    },
+    {
+      "contaCodigo": "4191106130200000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Licenças Ambientais - Dívida Ativa",
+      "valorOrcado": "100.00"
+    },
+    {
+      "contaCodigo": "4191106140200000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Licenças Ambientais - Dívida Ativa - Multas e Juros",
+      "valorOrcado": "100.00"
+    },
+    {
+      "contaCodigo": "4191107010000000000",
+      "contaDescricao": "Multas Aplicadas Pelos Tribunais de Contas - principal",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "contaCodigo": "4191107030000000000",
+      "contaDescricao": "Multas Aplicadas Pelos Tribunais de Contas - Dívida Ativa",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4191107040000000000",
+      "contaDescricao": "Multas Aplicadas Pelos Tribunais de Contas - Multa e Juros de Mora da Divida Ativa",
+      "valorOrcado": "500.00"
+    },
+    {
+      "contaCodigo": "4191114010100000000",
+      "contaDescricao": "Multas de Trânsito (80%/10%/10%)",
+      "valorOrcado": "260000.00"
+    },
+    {
+      "contaCodigo": "4191114010100000000",
+      "contaDescricao": "Multas de Trânsito (80%/10%/10%)",
+      "valorOrcado": "260000.00"
+    },
+    {
+      "contaCodigo": "4191114010100000000",
+      "contaDescricao": "Multas de Trânsito (80%/10%/10%)",
+      "valorOrcado": "2080000.00"
+    },
+    {
+      "contaCodigo": "4191114010200000000",
+      "contaDescricao": "Multas de Trânsito (70%/15%/15%)",
+      "valorOrcado": "322500.00"
+    },
+    {
+      "contaCodigo": "4191114010200000000",
+      "contaDescricao": "Multas de Trânsito (70%/15%/15%)",
+      "valorOrcado": "322500.00"
+    },
+    {
+      "contaCodigo": "4191114010200000000",
+      "contaDescricao": "Multas de Trânsito (70%/15%/15%)",
+      "valorOrcado": "1505000.00"
+    },
+    {
+      "contaCodigo": "4192199010400000000",
+      "contaDescricao": "Outras Indenizações - SAMAE - Principal",
+      "valorOrcado": "1000.00"
+    },
+    {
+      "contaCodigo": "4199903010000000000",
+      "contaDescricao": "Compensações financeiras entre os regimes de previdência - Principal",
+      "valorOrcado": "500000.00"
+    },
+    {
+      "contaCodigo": "4199912210100000000",
+      "contaDescricao": "Ônus de Sucumbência - Principal",
+      "valorOrcado": "23600.00"
+    },
+    {
+      "contaCodigo": "4199912210200000000",
+      "contaDescricao": "Ônus de Sucumbência - Principal (LC nº 548/2024)",
+      "valorOrcado": "97500.00"
+    },
+    {
+      "contaCodigo": "4199912210200000000",
+      "contaDescricao": "Ônus de Sucumbência - Principal (LC nº 548/2024)",
+      "valorOrcado": "52500.00"
+    },
+    {
+      "contaCodigo": "4199912220100000000",
+      "contaDescricao": "Ônus de Sucumbência - Multa e Juros",
+      "valorOrcado": "2500.00"
+    },
+    {
+      "contaCodigo": "4199912230100000000",
+      "contaDescricao": "Ônus de Sucumbência - Divida Ativa",
+      "valorOrcado": "500.00"
+    },
+    {
+      "contaCodigo": "4199912240100000000",
+      "contaDescricao": "Ônus de Sucumbência - Divida Ativa Multa e Juros",
+      "valorOrcado": "400.00"
+    },
+    {
+      "contaCodigo": "4199999210100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Principal",
+      "valorOrcado": "412000.00"
+    },
+    {
+      "contaCodigo": "4199999210200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE - Principal",
+      "valorOrcado": "5000.00"
+    },
+    {
+      "contaCodigo": "4199999210300000000",
+      "contaDescricao": "Outras Receitas Primárias: Festa Pomerana - Principal",
+      "valorOrcado": "8700000.00"
+    },
+    {
+      "contaCodigo": "4199999210400000000",
+      "contaDescricao": "Outras Receitas Primárias:  FUNDETUR - Principal",
+      "valorOrcado": "53261.62"
+    },
+    {
+      "contaCodigo": "4199999210500000000",
+      "contaDescricao": "Outras Receitas Primárias: Fundo Municipal da Pessoa Idosa - Principal",
+      "valorOrcado": "34000.00"
+    },
+    {
+      "contaCodigo": "4199999210500000000",
+      "contaDescricao": "Outras Receitas Primárias: Fundo Municipal da Pessoa Idosa - Principal",
+      "valorOrcado": "20000.00"
+    },
+    {
+      "contaCodigo": "4199999210600000000",
+      "contaDescricao": "Outras Receitas Primárias: Fundo Municipal para Criança e o Adolescente  - Principal",
+      "valorOrcado": "40000.00"
+    },
+    {
+      "contaCodigo": "4199999210600000000",
+      "contaDescricao": "Outras Receitas Primárias: Fundo Municipal para Criança e o Adolescente  - Principal",
+      "valorOrcado": "6000.00"
+    },
+    {
+      "contaCodigo": "4199999210700000000",
+      "contaDescricao": "Outras Receitas Primárias: FMMA - CRA/ Lei 368/2019 - Certidão de Regularização Ambiental - principal",
+      "valorOrcado": "509000.00"
+    },
+    {
+      "contaCodigo": "4199999210800000000",
+      "contaDescricao": "Outras Receitas Primárias: Taxa Voluntária de Segurança - principal",
+      "valorOrcado": "7500.00"
+    },
+    {
+      "contaCodigo": "4199999211100000000",
+      "contaDescricao": "Outras Receitas Primárias: LLFP 90% CULTURA",
+      "valorOrcado": "216738.38"
+    },
+    {
+      "contaCodigo": "4199999220100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Multas e Juros",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "contaCodigo": "4199999220200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE  - Multas e Juros",
+      "valorOrcado": "10000.00"
+    },
+    {
+      "contaCodigo": "4199999230100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Dívida Ativa",
+      "valorOrcado": "35000.00"
+    },
+    {
+      "contaCodigo": "4199999230200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE - Divida Ativa",
+      "valorOrcado": "35000.00"
+    },
+    {
+      "contaCodigo": "4199999240100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Dívida Ativa Multas e Juros",
+      "valorOrcado": "12000.00"
+    },
+    {
+      "contaCodigo": "4199999240200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE - Divida Ativa Multas e Juros",
+      "valorOrcado": "2000.00"
+    },
+    {
+      "contaCodigo": "4211201010000000000",
+      "contaDescricao": "Operações de crédito contratuais - mercado interno - Principal",
+      "valorOrcado": "3000000.00"
+    },
+    {
+      "contaCodigo": "4221301010100000000",
+      "contaDescricao": "Alienação de bens móveis e semoventes - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4241350010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4241450010000000000",
+      "contaDescricao": "Transferências de convênios da união para o sistema único de saúde - SUS - Principal",
+      "valorOrcado": "3500000.00"
+    },
+    {
+      "contaCodigo": "4241451010000000000",
+      "contaDescricao": "Transferências de convênios da união destinadas a programas de educação - Principal",
+      "valorOrcado": "1430000.00"
+    },
+    {
+      "contaCodigo": "4241499010000000000",
+      "contaDescricao": "Outras transferências de convênios da união e de suas entidades - Principal",
+      "valorOrcado": "100000.00"
+    },
+    {
+      "contaCodigo": "4241499010000000000",
+      "contaDescricao": "Outras transferências de convênios da união e de suas entidades - Principal",
+      "valorOrcado": "2900000.00"
+    },
+    {
+      "contaCodigo": "4241499010000000000",
+      "contaDescricao": "Outras transferências de convênios da união e de suas entidades - Principal",
+      "valorOrcado": "219650.00"
+    },
+    {
+      "contaCodigo": "4241951010000000000",
+      "contaDescricao": "Transferência especial da união - Principal",
+      "valorOrcado": "500000.00"
+    },
+    {
+      "contaCodigo": "4242250010000000000",
+      "contaDescricao": "Transferências de convênios dos estados para o sistema único de saúde - SUS - Principal",
+      "valorOrcado": "300000.00"
+    },
+    {
+      "contaCodigo": "4242251010000000000",
+      "contaDescricao": "Transferências de convênios dos estados destinadas a programas de educação - Principal",
+      "valorOrcado": "100000.00"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "449999.69"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "779000.00"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "972999.98"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "1875306.00"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "32600.00"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "5994796.34"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "221744.49"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "500000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "10446500.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "150000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "250000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "400000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "25000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "17000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "1500.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "100000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "700000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "300000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "250000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "100000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "200000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "380000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "400000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "150000.00"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorOrcado": "150000.00"
+    },
+    {
+      "contaCodigo": "4712201010000000000",
+      "contaDescricao": "Taxas pela prestação de serviços em geral - Principal",
+      "valorOrcado": "42000.00"
+    },
+    {
+      "contaCodigo": "4721502110100000000",
+      "contaDescricao": "Contribuição Patronal - PMP",
+      "valorOrcado": "10027800.00"
+    },
+    {
+      "contaCodigo": "4721502110100000000",
+      "contaDescricao": "Contribuição Patronal - PMP",
+      "valorOrcado": "1114200.00"
+    },
+    {
+      "contaCodigo": "4721502110200000000",
+      "contaDescricao": "Contribuição Patronal - FMS",
+      "valorOrcado": "4299300.00"
+    },
+    {
+      "contaCodigo": "4721502110200000000",
+      "contaDescricao": "Contribuição Patronal - FMS",
+      "valorOrcado": "477700.00"
+    },
+    {
+      "contaCodigo": "4721502110300000000",
+      "contaDescricao": "Contribuição Patronal - CMV",
+      "valorOrcado": "333000.00"
+    },
+    {
+      "contaCodigo": "4721502110300000000",
+      "contaDescricao": "Contribuição Patronal - CMV",
+      "valorOrcado": "37000.00"
+    },
+    {
+      "contaCodigo": "4721502110400000000",
+      "contaDescricao": "Contribuição Patronal - SAMAE",
+      "valorOrcado": "646200.00"
+    },
+    {
+      "contaCodigo": "4721502110400000000",
+      "contaDescricao": "Contribuição Patronal - SAMAE",
+      "valorOrcado": "71800.00"
+    },
+    {
+      "contaCodigo": "4721502110600000000",
+      "contaDescricao": "Contribuição Patronal - FAP",
+      "valorOrcado": "49500.00"
+    },
+    {
+      "contaCodigo": "4721502110600000000",
+      "contaDescricao": "Contribuição Patronal - FAP",
+      "valorOrcado": "5700.00"
+    },
+    {
+      "contaCodigo": "4721550110100000000",
+      "contaDescricao": "Contribuição Patronal Inativos - PMP",
+      "valorOrcado": "3672000.00"
+    },
+    {
+      "contaCodigo": "4721550110200000000",
+      "contaDescricao": "Contribuição Patronal Inativos - CMV",
+      "valorOrcado": "70000.00"
+    },
+    {
+      "contaCodigo": "4721550110300000000",
+      "contaDescricao": "Contribuição Patronal Inativos - SAMAE",
+      "valorOrcado": "190000.00"
+    },
+    {
+      "contaCodigo": "4799901010000000000",
+      "contaDescricao": "Aportes periódicos para amortização de déficit atuarial do regimes próprios de previdência e sistema de proteção social - Principal",
+      "valorOrcado": "906000.00"
+    },
+    {
+      "contaCodigo": "9171151110000000000",
+      "contaDescricao": "Cota-parte do fundo de participação dos municípios - cota mensal - Principal",
+      "valorOrcado": "8300000.00"
+    },
+    {
+      "contaCodigo": "9171152010000000000",
+      "contaDescricao": "Cota-parte do imposto sobre a propriedade territorial rural - Principal",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "contaCodigo": "9172150010000000000",
+      "contaDescricao": "Cota-parte do ICMS - Principal",
+      "valorOrcado": "17800000.00"
+    },
+    {
+      "contaCodigo": "9172151010000000000",
+      "contaDescricao": "Cota-parte do IPVA - Principal",
+      "valorOrcado": "2000000.00"
+    },
+    {
+      "contaCodigo": "9172152010000000000",
+      "contaDescricao": "Cota-parte do IPI - municípios - Principal",
+      "valorOrcado": "220000.00"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+# Publica o Painel Pomerode no GitHub Pages.
+#
+# Roda a cada push na master, manualmente (aba Actions → Run workflow) e uma vez por dia.
+# O `npm run build` executa antes o script de dados (prebuild), que busca na API só os
+# meses recentes; assim o site no ar se atualiza todo dia sem precisar de commit.
+# Se a API estiver fora do ar, o build usa os JSON já versionados em public/dados.
+
+name: Deploy Painel Pomerode
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *' # 06:00 em Brasília
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Atualizar dados e gerar o site
+        run: npm run build
+        env:
+          TZ: America/Sao_Paulo
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

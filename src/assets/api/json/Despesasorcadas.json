@@ -1,0 +1,327 @@
+{
+  "status": "ok",
+  "retorno": [
+    {
+      "orgaoCodigo": "1",
+      "orgaoDescricao": " Câmara Municipal",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": " Câmara Municipal",
+      "valorOrcado": "6960000.00"
+    },
+    {
+      "orgaoCodigo": "2",
+      "orgaoDescricao": " Gabinete do Prefeito",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Gabinete do Prefeito",
+      "valorOrcado": "1515100.00"
+    },
+    {
+      "orgaoCodigo": "3",
+      "orgaoDescricao": " Procuradoria-Geral do Município",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Procuradoria Geral do Município",
+      "valorOrcado": "3709798.53"
+    },
+    {
+      "orgaoCodigo": "3",
+      "orgaoDescricao": " Procuradoria-Geral do Município",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Fundo de Reaparelhamento da Procuradoria",
+      "valorOrcado": "109500.00"
+    },
+    {
+      "orgaoCodigo": "4",
+      "orgaoDescricao": " Secretaria de Governo",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Secretaria de Governo",
+      "valorOrcado": "2008000.00"
+    },
+    {
+      "orgaoCodigo": "4",
+      "orgaoDescricao": " Secretaria de Governo",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Fundo Municipal de Defesa Civil",
+      "valorOrcado": "7524837.81"
+    },
+    {
+      "orgaoCodigo": "5",
+      "orgaoDescricao": " Secretaria de Planejamento e Meio Ambiente",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Secretaria de Planejamento e Meio Ambiente",
+      "valorOrcado": "4260300.00"
+    },
+    {
+      "orgaoCodigo": "5",
+      "orgaoDescricao": " Secretaria de Planejamento e Meio Ambiente",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Gerência de Trânsito de Pomerode - Getran",
+      "valorOrcado": "10466000.00"
+    },
+    {
+      "orgaoCodigo": "5",
+      "orgaoDescricao": " Secretaria de Planejamento e Meio Ambiente",
+      "unidadeCodigo": "3",
+      "unidadeDescricao": "Fundo Municipal do Meio Ambiente - FMMA",
+      "valorOrcado": "1962600.00"
+    },
+    {
+      "orgaoCodigo": "6",
+      "orgaoDescricao": "Secretaria de Gestão Administrativa e Fazendária",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Secretaria de Gestão Administrativa e Fazendária",
+      "valorOrcado": "30971402.57"
+    },
+    {
+      "orgaoCodigo": "6",
+      "orgaoDescricao": "Secretaria de Gestão Administrativa e Fazendária",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Fundo de Reequipamento do Corpo de Bombeiros Militar - FUNREBOM",
+      "valorOrcado": "1809217.00"
+    },
+    {
+      "orgaoCodigo": "6",
+      "orgaoDescricao": "Secretaria de Gestão Administrativa e Fazendária",
+      "unidadeCodigo": "3",
+      "unidadeDescricao": "Tecnologia da Informação e Comunicação",
+      "valorOrcado": "3323300.00"
+    },
+    {
+      "orgaoCodigo": "7",
+      "orgaoDescricao": "Secretaria de Educação e Formação Empreendedora",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Educação Infantil",
+      "valorOrcado": "33974224.53"
+    },
+    {
+      "orgaoCodigo": "7",
+      "orgaoDescricao": "Secretaria de Educação e Formação Empreendedora",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Ensino Fundamental",
+      "valorOrcado": "56115488.01"
+    },
+    {
+      "orgaoCodigo": "7",
+      "orgaoDescricao": "Secretaria de Educação e Formação Empreendedora",
+      "unidadeCodigo": "3",
+      "unidadeDescricao": "Secretaria da Educação",
+      "valorOrcado": "5250631.33"
+    },
+    {
+      "orgaoCodigo": "7",
+      "orgaoDescricao": "Secretaria de Educação e Formação Empreendedora",
+      "unidadeCodigo": "4",
+      "unidadeDescricao": "Ensino Superior",
+      "valorOrcado": "300000.00"
+    },
+    {
+      "orgaoCodigo": "8",
+      "orgaoDescricao": "Secretaria de Obras",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Secretaria de Obras",
+      "valorOrcado": "49413364.65"
+    },
+    {
+      "orgaoCodigo": "8",
+      "orgaoDescricao": "Secretaria de Obras",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Iluminação Pública",
+      "valorOrcado": "4903610.25"
+    },
+    {
+      "orgaoCodigo": "9",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Rural",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Secretaria de Desenvolvimento Rural",
+      "valorOrcado": "4031756.46"
+    },
+    {
+      "orgaoCodigo": "9",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Rural",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Proteção aos Animais",
+      "valorOrcado": "720804.55"
+    },
+    {
+      "orgaoCodigo": "12",
+      "orgaoDescricao": "Secretaria de Turismo, Cultura e Desenvolvimento Econômico",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Turismo",
+      "valorOrcado": "3703404.57"
+    },
+    {
+      "orgaoCodigo": "12",
+      "orgaoDescricao": "Secretaria de Turismo, Cultura e Desenvolvimento Econômico",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Cultura",
+      "valorOrcado": "13159403.03"
+    },
+    {
+      "orgaoCodigo": "12",
+      "orgaoDescricao": "Secretaria de Turismo, Cultura e Desenvolvimento Econômico",
+      "unidadeCodigo": "3",
+      "unidadeDescricao": "Fundo Municipal do Desenvolvimento do Turismo",
+      "valorOrcado": "756000.00"
+    },
+    {
+      "orgaoCodigo": "12",
+      "orgaoDescricao": "Secretaria de Turismo, Cultura e Desenvolvimento Econômico",
+      "unidadeCodigo": "4",
+      "unidadeDescricao": "Fundo Municipal de Cultura",
+      "valorOrcado": "3000.00"
+    },
+    {
+      "orgaoCodigo": "12",
+      "orgaoDescricao": "Secretaria de Turismo, Cultura e Desenvolvimento Econômico",
+      "unidadeCodigo": "5",
+      "unidadeDescricao": "Desenvolvimento Econômico",
+      "valorOrcado": "829482.35"
+    },
+    {
+      "orgaoCodigo": "13",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Social e Habitação",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Fundo Municipal da Assistência Social",
+      "valorOrcado": "7835565.45"
+    },
+    {
+      "orgaoCodigo": "13",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Social e Habitação",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Conselho Tutelar",
+      "valorOrcado": "1080300.00"
+    },
+    {
+      "orgaoCodigo": "13",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Social e Habitação",
+      "unidadeCodigo": "3",
+      "unidadeDescricao": "Fundo Municipal para Criança e o Adolescente",
+      "valorOrcado": "328122.39"
+    },
+    {
+      "orgaoCodigo": "13",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Social e Habitação",
+      "unidadeCodigo": "4",
+      "unidadeDescricao": "Fundo Municipal da Pessoa Idosa",
+      "valorOrcado": "484023.43"
+    },
+    {
+      "orgaoCodigo": "13",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Social e Habitação",
+      "unidadeCodigo": "5",
+      "unidadeDescricao": "Fundo Municipal p/ Ações de Políticas Sobre Drogas",
+      "valorOrcado": "35258.98"
+    },
+    {
+      "orgaoCodigo": "13",
+      "orgaoDescricao": "Secretaria de Desenvolvimento Social e Habitação",
+      "unidadeCodigo": "6",
+      "unidadeDescricao": "Fundo Municipal de Habitação",
+      "valorOrcado": "5385506.00"
+    },
+    {
+      "orgaoCodigo": "15",
+      "orgaoDescricao": " Serviço Autônomo Municipal de Água e Esgoto de Pomerode",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Serviço Autônomo Municipal de Água e Esgoto",
+      "valorOrcado": "14071589.13"
+    },
+    {
+      "orgaoCodigo": "16",
+      "orgaoDescricao": "Fundo de Aposentadoria e Pensão de Pomerode",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Fundo de Aposentadoria e Pensão de Pomerode",
+      "valorOrcado": "35268649.83"
+    },
+    {
+      "orgaoCodigo": "16",
+      "orgaoDescricao": "Fundo de Aposentadoria e Pensão de Pomerode",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Reserva de Contingência do RPPS",
+      "valorOrcado": "5000000.00"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Atenção Primária em Saúde",
+      "valorOrcado": "44189690.67"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Assistência Hospitalar e Ambulatorial",
+      "valorOrcado": "28062995.61"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "3",
+      "unidadeDescricao": "Vigilância Sanitária",
+      "valorOrcado": "1220656.23"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "4",
+      "unidadeDescricao": "Vigilância Epidemiológica",
+      "valorOrcado": "1351864.20"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "5",
+      "unidadeDescricao": "Alimentação e Nutrição",
+      "valorOrcado": "57436.02"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "6",
+      "unidadeDescricao": "Gestão Saúde",
+      "valorOrcado": "6686887.98"
+    },
+    {
+      "orgaoCodigo": "19",
+      "orgaoDescricao": "Fundo Municipal de Saúde",
+      "unidadeCodigo": "7",
+      "unidadeDescricao": "Assistência Farmacêutica",
+      "valorOrcado": "1813345.73"
+    },
+    {
+      "orgaoCodigo": "31",
+      "orgaoDescricao": "Secretaria de Transparência, Controle e Integridade Pública",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Transparência, Controle e Integridade Pública",
+      "valorOrcado": "697400.00"
+    },
+    {
+      "orgaoCodigo": "31",
+      "orgaoDescricao": "Secretaria de Transparência, Controle e Integridade Pública",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Ouvidoria",
+      "valorOrcado": "27000.00"
+    },
+    {
+      "orgaoCodigo": "32",
+      "orgaoDescricao": "Secretaria de Eventos, Esporte e Lazer",
+      "unidadeCodigo": "1",
+      "unidadeDescricao": "Secretaria de Eventos, Esporte e Lazer",
+      "valorOrcado": "5446270.17"
+    },
+    {
+      "orgaoCodigo": "32",
+      "orgaoDescricao": "Secretaria de Eventos, Esporte e Lazer",
+      "unidadeCodigo": "2",
+      "unidadeDescricao": "Atividades Comunitárias e Lazer da Família",
+      "valorOrcado": "155100.00"
+    },
+    {
+      "orgaoCodigo": "99",
+      "orgaoDescricao": "Reserva de Contingência",
+      "unidadeCodigo": "99",
+      "unidadeDescricao": "Res. cont. p/ Desp. não Orc. ou Orc. a Menor",
+      "valorOrcado": "100000.00"
+    }
+  ]
+}

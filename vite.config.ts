@@ -7,6 +7,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Caminhos relativos: funciona em qualquer subpasta do GitHub Pages (usuario.github.io/repositorio/).
+  base: './',
   plugins: [
     vue(),
     vueDevTools(),

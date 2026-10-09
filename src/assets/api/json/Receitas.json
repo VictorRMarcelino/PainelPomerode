@@ -1,0 +1,890 @@
+{
+  "status": "ok",
+  "retorno": [
+    {
+      "contaCodigo": "4111250010000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Principal",
+      "valorArrecadado": "8816124.99"
+    },
+    {
+      "contaCodigo": "4111250020000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Multas e Juros",
+      "valorArrecadado": "25406.51"
+    },
+    {
+      "contaCodigo": "4111250030000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Dívida Ativa",
+      "valorArrecadado": "244033.58"
+    },
+    {
+      "contaCodigo": "4111250040000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "80292.42"
+    },
+    {
+      "contaCodigo": "4111253010000000000",
+      "contaDescricao": "impostos sobre transmissão \"inter vivos\" de bens imóveis e de direitos reais sobre imóveis - Principal",
+      "valorArrecadado": "3755361.11"
+    },
+    {
+      "contaCodigo": "4111253020000000000",
+      "contaDescricao": "impostos sobre transmissão \"inter vivos\" de bens imóveis e de direitos reais sobre imóveis - Multas e Juros",
+      "valorArrecadado": "185.15"
+    },
+    {
+      "contaCodigo": "4111253030000000000",
+      "contaDescricao": "impostos sobre transmissão \"inter vivos\" de bens imóveis e de direitos reais sobre imóveis - Dívida Ativa",
+      "valorArrecadado": "4422.56"
+    },
+    {
+      "contaCodigo": "4111253040000000000",
+      "contaDescricao": "impostos sobre transmissão \"inter vivos\" de bens imóveis e de direitos reais sobre imóveis - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "1345.19"
+    },
+    {
+      "contaCodigo": "4111303110000000000",
+      "contaDescricao": "Imposto sobre a renda - retido na fonte - trabalho - Principal",
+      "valorArrecadado": "7152952.94"
+    },
+    {
+      "contaCodigo": "4111303410000000000",
+      "contaDescricao": "Imposto sobre a renda - retido na fonte - outros rendimentos - Principal",
+      "valorArrecadado": "853771.21"
+    },
+    {
+      "contaCodigo": "4111451110000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Principal",
+      "valorArrecadado": "12901100.76"
+    },
+    {
+      "contaCodigo": "4111451120000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Multas e Juros",
+      "valorArrecadado": "160257.21"
+    },
+    {
+      "contaCodigo": "4111451130000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Dívida Ativa",
+      "valorArrecadado": "332179.52"
+    },
+    {
+      "contaCodigo": "4111451140000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "217823.95"
+    },
+    {
+      "contaCodigo": "4112101010100000000",
+      "contaDescricao": "Taxa pelo exercício do poder de polícia - Principal",
+      "valorArrecadado": "1347299.66"
+    },
+    {
+      "contaCodigo": "4112101010200000000",
+      "contaDescricao": "Taxa ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Principal",
+      "valorArrecadado": "385357.40"
+    },
+    {
+      "contaCodigo": "4112101020100000000",
+      "contaDescricao": "Taxas pelo exercício do poder de polícia - Multas e Juros",
+      "valorArrecadado": "10560.75"
+    },
+    {
+      "contaCodigo": "4112101030100000000",
+      "contaDescricao": "Taxas pelo exercício do poder de polícia - Divida Ativa",
+      "valorArrecadado": "63028.03"
+    },
+    {
+      "contaCodigo": "4112101030200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Divida Ativa",
+      "valorArrecadado": "1280.54"
+    },
+    {
+      "contaCodigo": "4112101040100000000",
+      "contaDescricao": "Taxas pelo exercício do poder de polícia - Dívida Ativa Multas e Juros",
+      "valorArrecadado": "52099.37"
+    },
+    {
+      "contaCodigo": "4112101040200000000",
+      "contaDescricao": "Taxas ( LC nº. 173/2009, Inciso I do Art. 3º/ LC nº 370/2019. CONVÊNIO Nº 053/2026 ) - Divida Ativa Multas e Juros",
+      "valorArrecadado": "1481.30"
+    },
+    {
+      "contaCodigo": "4112150010000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Principal",
+      "valorArrecadado": "162848.66"
+    },
+    {
+      "contaCodigo": "4112150020000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Multas e Juros",
+      "valorArrecadado": "1066.17"
+    },
+    {
+      "contaCodigo": "4112150030000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Dívida Ativa",
+      "valorArrecadado": "12344.18"
+    },
+    {
+      "contaCodigo": "4112150040000000000",
+      "contaDescricao": "Taxa de fiscalização de vigilância sanitária - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "10428.49"
+    },
+    {
+      "contaCodigo": "4112201010100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Principal",
+      "valorArrecadado": "170561.73"
+    },
+    {
+      "contaCodigo": "4112201010200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Principal",
+      "valorArrecadado": "231748.16"
+    },
+    {
+      "contaCodigo": "4112201010600000000",
+      "contaDescricao": "Taxa de Coleta de Lixo - SAMAE - Principal",
+      "valorArrecadado": "2957580.81"
+    },
+    {
+      "contaCodigo": "4112201020100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Multas e Juros",
+      "valorArrecadado": "132.19"
+    },
+    {
+      "contaCodigo": "4112201020200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Multas e Juros",
+      "valorArrecadado": "66.27"
+    },
+    {
+      "contaCodigo": "4112201020600000000",
+      "contaDescricao": "Taxa de Coleta de Lixo - SAMAE - Multas e Juros",
+      "valorArrecadado": "7701.45"
+    },
+    {
+      "contaCodigo": "4112201030100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Dívida Ativa",
+      "valorArrecadado": "3705.41"
+    },
+    {
+      "contaCodigo": "4112201030200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Dívida Ativa",
+      "valorArrecadado": "637.47"
+    },
+    {
+      "contaCodigo": "4112201040100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "3364.70"
+    },
+    {
+      "contaCodigo": "4112201040200000000",
+      "contaDescricao": "Taxa Meio Ambiente (CIMVI) - Dívida Ativa - multas e juros",
+      "valorArrecadado": "41.44"
+    },
+    {
+      "contaCodigo": "4113153010000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Principal",
+      "valorArrecadado": "2187.02"
+    },
+    {
+      "contaCodigo": "4113153020000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Multas e Juros",
+      "valorArrecadado": "19.67"
+    },
+    {
+      "contaCodigo": "4113153030000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Dívida Ativa",
+      "valorArrecadado": "5904.52"
+    },
+    {
+      "contaCodigo": "4113153040000000000",
+      "contaDescricao": "Contribuição de melhoria para pavimentação e obras complementares - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "4213.55"
+    },
+    {
+      "contaCodigo": "4121501110100000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - PMP",
+      "valorArrecadado": "3447393.97"
+    },
+    {
+      "contaCodigo": "4121501110200000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - FMS",
+      "valorArrecadado": "1377460.11"
+    },
+    {
+      "contaCodigo": "4121501110300000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - CMV",
+      "valorArrecadado": "75174.34"
+    },
+    {
+      "contaCodigo": "4121501110400000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - SAMAE",
+      "valorArrecadado": "172814.63"
+    },
+    {
+      "contaCodigo": "4121501110700000000",
+      "contaDescricao": "Contribuição do Servidor Ativo - FAP",
+      "valorArrecadado": "24818.78"
+    },
+    {
+      "contaCodigo": "4121501210100000000",
+      "contaDescricao": "Contribuição para o rpps",
+      "valorArrecadado": "354491.19"
+    },
+    {
+      "contaCodigo": "4121950910000000000",
+      "contaDescricao": "Demais Contribuições Previdenciárias - Principal",
+      "valorArrecadado": "6764.02"
+    },
+    {
+      "contaCodigo": "4121950920000000000",
+      "contaDescricao": "Demais Contribuições Previdenciárias - Multas e Juros",
+      "valorArrecadado": "140.95"
+    },
+    {
+      "contaCodigo": "4121950930000000000",
+      "contaDescricao": "Demais Contribuições Previdenciárias - Dívida Ativa",
+      "valorArrecadado": "7349.98"
+    },
+    {
+      "contaCodigo": "4121950940000000000",
+      "contaDescricao": "Demais Contribuições Previdenciárias - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "572.94"
+    },
+    {
+      "contaCodigo": "4124150010000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Principal",
+      "valorArrecadado": "2564246.93"
+    },
+    {
+      "contaCodigo": "4124150020000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Multas e Juros",
+      "valorArrecadado": "386.91"
+    },
+    {
+      "contaCodigo": "4124150030000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Dívida Ativa",
+      "valorArrecadado": "4074.55"
+    },
+    {
+      "contaCodigo": "4124150040000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "1751.31"
+    },
+    {
+      "contaCodigo": "4131101110000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Principal",
+      "valorArrecadado": "28217.18"
+    },
+    {
+      "contaCodigo": "4131101120000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Multas e Juros",
+      "valorArrecadado": "16.64"
+    },
+    {
+      "contaCodigo": "4131101130000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Dívida Ativa",
+      "valorArrecadado": "8364.90"
+    },
+    {
+      "contaCodigo": "4131101140000000000",
+      "contaDescricao": "Aluguéis e arrendamentos - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "9782.39"
+    },
+    {
+      "contaCodigo": "4132101110100000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Recursos Próprios",
+      "valorArrecadado": "4326570.87"
+    },
+    {
+      "contaCodigo": "4132101110200000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Vinculados Outros",
+      "valorArrecadado": "1551176.00"
+    },
+    {
+      "contaCodigo": "4132101110300000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Educação",
+      "valorArrecadado": "586717.28"
+    },
+    {
+      "contaCodigo": "4132101110400000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Saúde",
+      "valorArrecadado": "888418.11"
+    },
+    {
+      "contaCodigo": "4132101110500000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Assistência Social",
+      "valorArrecadado": "73756.82"
+    },
+    {
+      "contaCodigo": "4132101110600000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Samae",
+      "valorArrecadado": "44573.78"
+    },
+    {
+      "contaCodigo": "4132101110700000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (80%/10%/10%)",
+      "valorArrecadado": "45362.10"
+    },
+    {
+      "contaCodigo": "4132101110800000000",
+      "contaDescricao": "Remuneração de depósitos bancários - Trânsito (70%/15%/15%)",
+      "valorArrecadado": "37387.28"
+    },
+    {
+      "contaCodigo": "4132101110900000000",
+      "contaDescricao": "Remuneração de depósitos bancários - FUNREBOM (60%/40%)",
+      "valorArrecadado": "231031.93"
+    },
+    {
+      "contaCodigo": "4132104010200000000",
+      "contaDescricao": "Remuneração dos recursos do regime próprio de previdência social - RPPS - Renda Variável",
+      "valorArrecadado": "4289886.43"
+    },
+    {
+      "contaCodigo": "4136101110000000000",
+      "contaDescricao": "Cessão do direito de operacionalização de pagamentos - poderes executivo e legislativo - Principal",
+      "valorArrecadado": "2751800.00"
+    },
+    {
+      "contaCodigo": "4151101010000000000",
+      "contaDescricao": "Receita industrial - Principal",
+      "valorArrecadado": "474160.41"
+    },
+    {
+      "contaCodigo": "4151101050000000000",
+      "contaDescricao": "Receita\tReceita industrial - Multas",
+      "valorArrecadado": "409.26"
+    },
+    {
+      "contaCodigo": "4151101060000000000",
+      "contaDescricao": "Receita\tReceita industrial - Juros de mora",
+      "valorArrecadado": "204.63"
+    },
+    {
+      "contaCodigo": "4161102010100000000",
+      "contaDescricao": "Inscrição em concursos e processos seletivos (PMP) - principal",
+      "valorArrecadado": "75680.00"
+    },
+    {
+      "contaCodigo": "4169999010100000000",
+      "contaDescricao": "Outros Serviços - SAMAE",
+      "valorArrecadado": "864.78"
+    },
+    {
+      "contaCodigo": "4171151110000000000",
+      "contaDescricao": "Cota-parte do fundo de participação dos municípios - cota mensal - Principal",
+      "valorArrecadado": "25293897.12"
+    },
+    {
+      "contaCodigo": "4171151210000000000",
+      "contaDescricao": "Cota-parte do fundo de participação dos municípios - cotas extraordinárias - Principal",
+      "valorArrecadado": "1828900.44"
+    },
+    {
+      "contaCodigo": "4171152010000000000",
+      "contaDescricao": "Cota-parte do imposto sobre a propriedade territorial rural - Principal",
+      "valorArrecadado": "2620.95"
+    },
+    {
+      "contaCodigo": "4171251010000000000",
+      "contaDescricao": "Cota-parte da compensação financeira pela exploração de recursos minerais - cfem - Principal",
+      "valorArrecadado": "205324.93"
+    },
+    {
+      "contaCodigo": "4171252110000000000",
+      "contaDescricao": "Cota-parte da compensação financeira pela produção de petróleo - lei nº 7.990/90 - Principal",
+      "valorArrecadado": "5055247.21"
+    },
+    {
+      "contaCodigo": "4171252410000000000",
+      "contaDescricao": "Cota-parte do fundo especial do petróleo - fep - Principal",
+      "valorArrecadado": "549567.39"
+    },
+    {
+      "contaCodigo": "4171350110000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção primária - Principal",
+      "valorArrecadado": "6491432.92"
+    },
+    {
+      "contaCodigo": "4171350210000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - atenção especializada - Principal",
+      "valorArrecadado": "1831704.67"
+    },
+    {
+      "contaCodigo": "4171350310000000000",
+      "contaDescricao": "Transferências de recursos do bloco de manutenção das ações e serviços públicos de saúde - vigilância em saúde - Principal",
+      "valorArrecadado": "187024.65"
+    },
+    {
+      "contaCodigo": "4171450010000000000",
+      "contaDescricao": "Transferências do salário-educação - Principal",
+      "valorArrecadado": "1943473.99"
+    },
+    {
+      "contaCodigo": "4171452010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de alimentação escolar - pnae - Principal",
+      "valorArrecadado": "768261.00"
+    },
+    {
+      "contaCodigo": "4171453010000000000",
+      "contaDescricao": "Transferências referentes ao programa nacional de apoio ao transporte do escolar - pnate - Principal",
+      "valorArrecadado": "12591.89"
+    },
+    {
+      "contaCodigo": "4171553010000000000",
+      "contaDescricao": "Transferências de recursos do FUNDEB destinados à criação de matrículas em Eti - Principal",
+      "valorArrecadado": "120491.88"
+    },
+    {
+      "contaCodigo": "4171650010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorArrecadado": "114821.61"
+    },
+    {
+      "contaCodigo": "4171958010000000000",
+      "contaDescricao": "Transferência obrigatória decorrente da lei complementar n° 176/2020 - Principal",
+      "valorArrecadado": "90743.31"
+    },
+    {
+      "contaCodigo": "4171960010000000000",
+      "contaDescricao": "Transferências da Política Nacional Aldir Blanc de Fomento à Cultura - Lei nº 14.399/2022 - Principal",
+      "valorArrecadado": "260926.98"
+    },
+    {
+      "contaCodigo": "4172150010000000000",
+      "contaDescricao": "Cota-parte do ICMS - Principal",
+      "valorArrecadado": "51748685.33"
+    },
+    {
+      "contaCodigo": "4172151010000000000",
+      "contaDescricao": "Cota-parte do IPVA - Principal",
+      "valorArrecadado": "5979331.80"
+    },
+    {
+      "contaCodigo": "4172152010000000000",
+      "contaDescricao": "Cota-parte do IPI - municípios - Principal",
+      "valorArrecadado": "588373.68"
+    },
+    {
+      "contaCodigo": "4172153010000000000",
+      "contaDescricao": "Cota-parte da contribuição de intervenção no domínio econômico - Principal",
+      "valorArrecadado": "30714.19"
+    },
+    {
+      "contaCodigo": "4172350010000000000",
+      "contaDescricao": "Transferências de recursos do sistema único de saúde - SUS - Principal",
+      "valorArrecadado": "520860.95"
+    },
+    {
+      "contaCodigo": "4172499010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorArrecadado": "149980.46"
+    },
+    {
+      "contaCodigo": "4172951010000000000",
+      "contaDescricao": "Transferências de estados destinadas à assistência social - Principal",
+      "valorArrecadado": "197371.38"
+    },
+    {
+      "contaCodigo": "4172999010000000000",
+      "contaDescricao": "Outras transferências dos estados e df - Principal",
+      "valorArrecadado": "575140.00"
+    },
+    {
+      "contaCodigo": "4175150010100000000",
+      "contaDescricao": "Transferências de recursos do fundo de manutenção e desenvolvimento da educação básica e de valorização dos profissionais da educação - FUNDEB - Principal",
+      "valorArrecadado": "26820895.83"
+    },
+    {
+      "contaCodigo": "4175150010200000000",
+      "contaDescricao": "Transferências FUNDEB  - Principal (Ação Judicial-0311732-94.2017.8.24.0023)",
+      "valorArrecadado": "220933.13"
+    },
+    {
+      "contaCodigo": "4175150010300000000",
+      "contaDescricao": "Transferências FUNDEB: 4% (Escola Tempo Integral)",
+      "valorArrecadado": "794827.13"
+    },
+    {
+      "contaCodigo": "4191101010000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Principal",
+      "valorArrecadado": "7974.05"
+    },
+    {
+      "contaCodigo": "4191101020000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Multas e Juros",
+      "valorArrecadado": "726.81"
+    },
+    {
+      "contaCodigo": "4191101030000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Dívida Ativa",
+      "valorArrecadado": "8188.98"
+    },
+    {
+      "contaCodigo": "4191101040000000000",
+      "contaDescricao": "Multas previstas em legislação específica - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "4587.46"
+    },
+    {
+      "contaCodigo": "4191106110200000000",
+      "contaDescricao": "Multas administrativas por danos ambientais:  FMMA - Licenças Ambientais - Principal",
+      "valorArrecadado": "14700.00"
+    },
+    {
+      "contaCodigo": "4191106130100000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Infrações Ambientais - Dívida Ativa",
+      "valorArrecadado": "2780.04"
+    },
+    {
+      "contaCodigo": "4191106130200000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Licenças Ambientais - Dívida Ativa",
+      "valorArrecadado": "1284.52"
+    },
+    {
+      "contaCodigo": "4191106140100000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Infrações Ambientais - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "1164.59"
+    },
+    {
+      "contaCodigo": "4191106140200000000",
+      "contaDescricao": "Multas administrativas por danos ambientais: FMMA - Licenças Ambientais - Dívida Ativa - Multas e Juros",
+      "valorArrecadado": "539.59"
+    },
+    {
+      "contaCodigo": "4191107030000000000",
+      "contaDescricao": "Multas Aplicadas Pelos Tribunais de Contas - Dívida Ativa",
+      "valorArrecadado": "481.68"
+    },
+    {
+      "contaCodigo": "4191107040000000000",
+      "contaDescricao": "Multas Aplicadas Pelos Tribunais de Contas - Multa e Juros de Mora da Divida Ativa",
+      "valorArrecadado": "126.82"
+    },
+    {
+      "contaCodigo": "4191114010100000000",
+      "contaDescricao": "Multas de Trânsito (80%/10%/10%)",
+      "valorArrecadado": "2209184.41"
+    },
+    {
+      "contaCodigo": "4191114010200000000",
+      "contaDescricao": "Multas de Trânsito (70%/15%/15%)",
+      "valorArrecadado": "1477409.78"
+    },
+    {
+      "contaCodigo": "4192101010000000000",
+      "contaDescricao": "Indenizações por danos causados ao patrimônio público - Principal",
+      "valorArrecadado": "193303.76"
+    },
+    {
+      "contaCodigo": "4199903010000000000",
+      "contaDescricao": "Compensações financeiras entre os regimes de previdência - Principal",
+      "valorArrecadado": "181087.51"
+    },
+    {
+      "contaCodigo": "4199912210100000000",
+      "contaDescricao": "Ônus de Sucumbência - Principal",
+      "valorArrecadado": "9969.20"
+    },
+    {
+      "contaCodigo": "4199912210200000000",
+      "contaDescricao": "Ônus de Sucumbência - Principal (LC nº 548/2024)",
+      "valorArrecadado": "93765.05"
+    },
+    {
+      "contaCodigo": "4199912220100000000",
+      "contaDescricao": "Ônus de Sucumbência - Multa e Juros",
+      "valorArrecadado": "709.87"
+    },
+    {
+      "contaCodigo": "4199912220200000000",
+      "contaDescricao": "Ônus de Sucumbência - Multa e Juros (LC nº 548/2024)",
+      "valorArrecadado": "1730.79"
+    },
+    {
+      "contaCodigo": "4199912230100000000",
+      "contaDescricao": "Ônus de Sucumbência - Divida Ativa",
+      "valorArrecadado": "349.44"
+    },
+    {
+      "contaCodigo": "4199912240100000000",
+      "contaDescricao": "Ônus de Sucumbência - Divida Ativa Multa e Juros",
+      "valorArrecadado": "249.72"
+    },
+    {
+      "contaCodigo": "4199999210100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Principal",
+      "valorArrecadado": "895988.50"
+    },
+    {
+      "contaCodigo": "4199999210200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE - Principal",
+      "valorArrecadado": "234883.06"
+    },
+    {
+      "contaCodigo": "4199999210300000000",
+      "contaDescricao": "Outras Receitas Primárias: Festa Pomerana - Principal",
+      "valorArrecadado": "8509563.09"
+    },
+    {
+      "contaCodigo": "4199999210500000000",
+      "contaDescricao": "Outras Receitas Primárias: Fundo Municipal da Pessoa Idosa - Principal",
+      "valorArrecadado": "83824.98"
+    },
+    {
+      "contaCodigo": "4199999210600000000",
+      "contaDescricao": "Outras Receitas Primárias: Fundo Municipal para Criança e o Adolescente  - Principal",
+      "valorArrecadado": "101237.35"
+    },
+    {
+      "contaCodigo": "4199999210700000000",
+      "contaDescricao": "Outras Receitas Primárias: FMMA - CRA/ Lei 368/2019 - Certidão de Regularização Ambiental - principal",
+      "valorArrecadado": "20941.41"
+    },
+    {
+      "contaCodigo": "4199999210800000000",
+      "contaDescricao": "Outras Receitas Primárias: Taxa Voluntária de Segurança - principal",
+      "valorArrecadado": "15860.45"
+    },
+    {
+      "contaCodigo": "4199999220100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Multas e Juros",
+      "valorArrecadado": "2231.85"
+    },
+    {
+      "contaCodigo": "4199999220200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE  - Multas e Juros",
+      "valorArrecadado": "704.85"
+    },
+    {
+      "contaCodigo": "4199999220300000000",
+      "contaDescricao": "Outras Receitas Primárias: Festa Pomerana - Multas e Juros",
+      "valorArrecadado": "3500.20"
+    },
+    {
+      "contaCodigo": "4199999230100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Dívida Ativa",
+      "valorArrecadado": "44360.24"
+    },
+    {
+      "contaCodigo": "4199999230300000000",
+      "contaDescricao": "Outras Receitas Primárias: Festa Pomerana - Dívida Ativa",
+      "valorArrecadado": "101.09"
+    },
+    {
+      "contaCodigo": "4199999230700000000",
+      "contaDescricao": "Outras Receitas Primárias: FMMA - CRA/ Lei 368/2019 - Certidão de Regularização Ambiental - Dívida Ativa",
+      "valorArrecadado": "132.63"
+    },
+    {
+      "contaCodigo": "4199999240100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Dívida Ativa Multas e Juros",
+      "valorArrecadado": "14747.52"
+    },
+    {
+      "contaCodigo": "4199999240300000000",
+      "contaDescricao": "Outras Receitas Primárias: Festa Pomerana - Dívida Ativa Multas e Juros",
+      "valorArrecadado": "82.86"
+    },
+    {
+      "contaCodigo": "4199999240700000000",
+      "contaDescricao": "Outras Receitas Primárias: FMMA - CRA/ Lei 368/2019 - Certidão de Regularização Ambiental - Dívida Ativa Multas e Juros",
+      "valorArrecadado": "100.37"
+    },
+    {
+      "contaCodigo": "4221301010100000000",
+      "contaDescricao": "Alienação de bens móveis e semoventes - Principal",
+      "valorArrecadado": "15000.00"
+    },
+    {
+      "contaCodigo": "4241350010000000000",
+      "contaDescricao": "Transferências de recursos do fundo nacional de assistência social - fnas - Principal",
+      "valorArrecadado": "200000.00"
+    },
+    {
+      "contaCodigo": "4241451010000000000",
+      "contaDescricao": "Transferências de convênios da união destinadas a programas de educação - Principal",
+      "valorArrecadado": "338041.10"
+    },
+    {
+      "contaCodigo": "4241499010000000000",
+      "contaDescricao": "Outras transferências de convênios da união e de suas entidades - Principal",
+      "valorArrecadado": "122862.55"
+    },
+    {
+      "contaCodigo": "4241951010000000000",
+      "contaDescricao": "Transferência especial da união - Principal",
+      "valorArrecadado": "288653.52"
+    },
+    {
+      "contaCodigo": "4242299010000000000",
+      "contaDescricao": "Outras transferências de convênios dos estados e df e de suas entidades - Principal",
+      "valorArrecadado": "5673344.18"
+    },
+    {
+      "contaCodigo": "4242999010000000000",
+      "contaDescricao": "Outras transferências de recursos dos estados - Principal",
+      "valorArrecadado": "3880000.00"
+    },
+    {
+      "contaCodigo": "4721502110100000000",
+      "contaDescricao": "Contribuição Patronal - PMP",
+      "valorArrecadado": "4826282.95"
+    },
+    {
+      "contaCodigo": "4721502110200000000",
+      "contaDescricao": "Contribuição Patronal - FMS",
+      "valorArrecadado": "1973072.09"
+    },
+    {
+      "contaCodigo": "4721502110300000000",
+      "contaDescricao": "Contribuição Patronal - CMV",
+      "valorArrecadado": "105244.08"
+    },
+    {
+      "contaCodigo": "4721502110400000000",
+      "contaDescricao": "Contribuição Patronal - SAMAE",
+      "valorArrecadado": "241953.31"
+    },
+    {
+      "contaCodigo": "4721502110600000000",
+      "contaDescricao": "Contribuição Patronal - FAP",
+      "valorArrecadado": "34746.29"
+    },
+    {
+      "contaCodigo": "4721550110100000000",
+      "contaDescricao": "Contribuição Patronal Inativos - PMP",
+      "valorArrecadado": "2061548.37"
+    },
+    {
+      "contaCodigo": "4721550110200000000",
+      "contaDescricao": "Contribuição Patronal Inativos - CMV",
+      "valorArrecadado": "33497.09"
+    },
+    {
+      "contaCodigo": "4721550110300000000",
+      "contaDescricao": "Contribuição Patronal Inativos - SAMAE",
+      "valorArrecadado": "111907.78"
+    },
+    {
+      "contaCodigo": "4799901010000000000",
+      "contaDescricao": "Aportes periódicos para amortização de déficit atuarial do regimes próprios de previdência e sistema de proteção social - Principal",
+      "valorArrecadado": "1648219.00"
+    },
+    {
+      "contaCodigo": "9111250010000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Principal",
+      "valorArrecadado": "-705322.06"
+    },
+    {
+      "contaCodigo": "9111250020000000000",
+      "contaDescricao": "Imposto sobre a propriedade predial e territorial urbana - Multas e Juros",
+      "valorArrecadado": "-35.95"
+    },
+    {
+      "contaCodigo": "9111253010000000000",
+      "contaDescricao": "impostos sobre transmissão \"inter vivos\" de bens imóveis e de direitos reais sobre imóveis - Principal",
+      "valorArrecadado": "-84368.72"
+    },
+    {
+      "contaCodigo": "9111303110000000000",
+      "contaDescricao": "Imposto sobre a renda - retido na fonte - trabalho - Principal",
+      "valorArrecadado": "-19377.50"
+    },
+    {
+      "contaCodigo": "9111303410000000000",
+      "contaDescricao": "Imposto sobre a renda - retido na fonte - outros rendimentos - Principal",
+      "valorArrecadado": "-105.98"
+    },
+    {
+      "contaCodigo": "9111451110000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Principal",
+      "valorArrecadado": "-34398.53"
+    },
+    {
+      "contaCodigo": "9111451120000000000",
+      "contaDescricao": "Imposto sobre serviços de qualquer natureza - issqn - Multas e Juros",
+      "valorArrecadado": "-24.22"
+    },
+    {
+      "contaCodigo": "9112101010100000000",
+      "contaDescricao": "Taxa pelo exercício do poder de polícia - Principal",
+      "valorArrecadado": "-2990.20"
+    },
+    {
+      "contaCodigo": "9112201010100000000",
+      "contaDescricao": "Taxas pela prestação de serviços - Principal",
+      "valorArrecadado": "-209.50"
+    },
+    {
+      "contaCodigo": "9112201010600000000",
+      "contaDescricao": "Taxa de Coleta de Lixo - SAMAE - Principal",
+      "valorArrecadado": "-30015.67"
+    },
+    {
+      "contaCodigo": "9112201020600000000",
+      "contaDescricao": "Taxa de Coleta de Lixo - SAMAE - Multas e Juros",
+      "valorArrecadado": "-13.28"
+    },
+    {
+      "contaCodigo": "9124150010000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Principal",
+      "valorArrecadado": "-87.10"
+    },
+    {
+      "contaCodigo": "9124150020000000000",
+      "contaDescricao": "Contribuição para o custeio do serviço de iluminação pública - Multas e Juros",
+      "valorArrecadado": "-0.27"
+    },
+    {
+      "contaCodigo": "9171151110000000000",
+      "contaDescricao": "Cota-parte do fundo de participação dos municípios - cota mensal - Principal",
+      "valorArrecadado": "-5058779.18"
+    },
+    {
+      "contaCodigo": "9171152010000000000",
+      "contaDescricao": "Cota-parte do imposto sobre a propriedade territorial rural - Principal",
+      "valorArrecadado": "-524.07"
+    },
+    {
+      "contaCodigo": "9172150010000000000",
+      "contaDescricao": "Cota-parte do ICMS - Principal",
+      "valorArrecadado": "-10349736.38"
+    },
+    {
+      "contaCodigo": "9172151010000000000",
+      "contaDescricao": "Cota-parte do IPVA - Principal",
+      "valorArrecadado": "-1195865.84"
+    },
+    {
+      "contaCodigo": "9172152010000000000",
+      "contaDescricao": "Cota-parte do IPI - municípios - Principal",
+      "valorArrecadado": "-117674.75"
+    },
+    {
+      "contaCodigo": "9191114010100000000",
+      "contaDescricao": "Multas de Trânsito (80%/10%/10%)",
+      "valorArrecadado": "-110396.20"
+    },
+    {
+      "contaCodigo": "9191114010200000000",
+      "contaDescricao": "Multas de Trânsito (70%/15%/15%)",
+      "valorArrecadado": "-55805.08"
+    },
+    {
+      "contaCodigo": "9199999210100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Principal",
+      "valorArrecadado": "-7599.63"
+    },
+    {
+      "contaCodigo": "9199999210200000000",
+      "contaDescricao": "Outras Receitas Primárias: SAMAE - Principal",
+      "valorArrecadado": "-8271.80"
+    },
+    {
+      "contaCodigo": "9199999230100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Dívida Ativa",
+      "valorArrecadado": "-125.71"
+    },
+    {
+      "contaCodigo": "9199999240100000000",
+      "contaDescricao": "Outras Receitas Primárias: PMP - Dívida Ativa Multas e Juros",
+      "valorArrecadado": "-50.29"
+    }
+  ]
+}

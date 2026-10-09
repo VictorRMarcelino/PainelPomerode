@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dados": "node scripts/atualizar-dados.ts",
+    "predev": "npm run dados",
     "dev": "vite",
+    "prebuild": "npm run dados",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",

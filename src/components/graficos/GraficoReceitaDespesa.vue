@@ -102,26 +102,7 @@ const opcoes = computed<ChartOptions<'bar'>>(() => ({
       no acumulado do exercício.
     </p>
 
-    <details class="text-sm">
-      <summary class="cursor-pointer text-suave hover:text-texto">Ver valores mensais em tabela</summary>
-      <table class="mt-2 w-full text-left text-xs">
-        <thead class="text-apagado">
-          <tr>
-            <th class="py-1 font-medium">Mês</th>
-            <th class="py-1 text-right font-medium">Receita arrecadada</th>
-            <th class="py-1 text-right font-medium">Despesa paga</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="m in porMes" :key="m.mes" class="border-t border-borda text-texto tabular-nums">
-            <td class="py-1.5 capitalize">{{ NOMES_MESES[Number(m.mes) - 1] }}</td>
-            <td class="py-1.5 text-right">{{ formatarMoeda(m.receita) }}</td>
-            <td class="py-1.5 text-right">{{ formatarMoeda(m.despesa) }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </details>
 
-    <BotaoCsv class="mt-auto self-start" @click="$emit('exportar')">Exportar CSV das receitas de {{ exercicio }}</BotaoCsv>
+    <BotaoCsv class="mt-auto self-start" @click="$emit('exportar')">Exportar CSV</BotaoCsv>
   </section>
 </template>

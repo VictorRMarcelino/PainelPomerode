@@ -12,7 +12,7 @@ import GraficoReceitaDespesa from '@/components/graficos/GraficoReceitaDespesa.v
 import '@/components/graficos/configurar'
 import { usePainelStore } from '@/stores/painel'
 import { exportarCredores, exportarDespesas, exportarReceitas } from '@/utils/exportacao'
-import { formatarData, formatarPercentual, formatarReais } from '@/utils/formatos'
+import { formatarPercentual, formatarReais } from '@/utils/formatos'
 
 const props = defineProps<{ ano?: string }>()
 
@@ -47,7 +47,7 @@ watch(
   () => indicePronto.value && aplicarRota(),
 )
 
-// RF04 — indicadores (regras nas notas explicativas abaixo). Os valores são números
+// RF04 — indicadores (a regra de cálculo aparece ao passar o mouse). Os valores são números
 // para o cartão animar a contagem; a formatação fica com cada cartão.
 const cartoes = computed(() => {
   const r = resumo.value
@@ -77,7 +77,7 @@ const cartoes = computed(() => {
       valor: r.populacao ? r.totalPago / r.populacao.habitantes : null,
       formatar: formatarReais,
       regra: r.populacao
-        ? `Pomerode · ${r.populacao.habitantes.toLocaleString('pt-BR')} hab. (IBGE ${r.populacao.ano})`
+        ? `Despesa paga ÷ ${r.populacao.habitantes.toLocaleString('pt-BR')} habitantes (IBGE ${r.populacao.ano})`
         : 'Estimativa do IBGE indisponível',
     },
   ]
@@ -86,7 +86,7 @@ const cartoes = computed(() => {
 
 <template>
   <div class="min-h-dvh">
-    <CabecalhoPainel :atualizado-em="atualizadoEm" />
+    <CabecalhoPainel :atualizado-em="atualizadoEm" :atualizando="atualizandoAoVivo && !carregando" />
 
     <main class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 sm:py-8">
       <section class="flex flex-wrap items-end justify-between gap-4">
@@ -98,10 +98,6 @@ const cartoes = computed(() => {
         </div>
         <div class="flex flex-col items-start gap-2 sm:items-end">
           <SeletorExercicio v-model="anoSelecionado" :anos="anosDisponiveis" />
-          <p v-if="atualizandoAoVivo && !carregando" class="flex items-center gap-2 text-xs text-suave" role="status">
-            <span class="size-3 animate-spin rounded-full border-2 border-borda border-t-texto" aria-hidden="true" />
-            Buscando lançamentos recentes no portal…
-          </p>
         </div>
       </section>
 
@@ -168,42 +164,6 @@ const cartoes = computed(() => {
         </Transition>
       </div>
 
-      <section class="cartao p-5 text-sm text-suave" aria-labelledby="titulo-notas">
-        <h2 id="titulo-notas" class="mb-2 font-semibold text-texto">Como os números são calculados</h2>
-        <ul class="list-disc space-y-1 pl-5">
-          <li>
-            <strong class="text-texto">Despesa</strong> é sempre o valor <em>pago</em> no exercício, não o empenhado
-            nem o liquidado. Restos a pagar de exercícios anteriores não entram na soma.
-          </li>
-          <li>
-            <strong class="text-texto">Receita</strong> é o valor arrecadado já descontadas as deduções (como a
-            parcela retida para o FUNDEB), que a API informa com valor negativo.
-          </li>
-          <li>
-            <strong class="text-texto">Saúde e Educação</strong> consideram o órgão responsável (Fundo Municipal de
-            Saúde e Secretaria de Educação), não a função de governo.
-          </li>
-          <li>
-            <strong class="text-texto">Orçamento executado</strong> divide a despesa paga pela despesa orçada
-            (dotação) do exercício.
-          </li>
-          <li>
-            <strong class="text-texto">Despesa por habitante</strong> usa a última estimativa de população do IBGE
-            disponível para o ano.
-          </li>
-          <li>
-            <strong class="text-texto">Credores</strong> são agrupados pelo CPF/CNPJ; o valor recebido é a soma paga no
-            exercício e a participação é calculada sobre o total pago da secretaria filtrada (ou de todas).
-          </li>
-          <li>
-            Os arquivos CSV trazem todas as linhas originais da API, mês a mês, para conferência em planilha.
-          </li>
-        </ul>
-        <p class="mt-3 text-xs text-apagado">
-          Fonte: API de Dados Abertos do Portal da Transparência de Pomerode (IPM Sistemas), consultada em
-          {{ formatarData(atualizadoEm) }}; população: IBGE.
-        </p>
-      </section>
     </main>
 
     <RodapePainel :atualizado-em="atualizadoEm" />

@@ -34,8 +34,3 @@ export function formatarData(iso: string): string {
   if (!ano || !mes || !dia) return '—'
   return `${dia} de ${MESES_ABREVIADOS[mes - 1]} ${ano}`
 }
-
-// "Secretaria de Educação e Formação Empreendedora" → "Educação e Formação Empreendedora"
-export function encurtarOrgao(nome: string): string {
-  return nome.replace(/^Secretaria (Municipal )?(de |da |do )?/i, '')
-}

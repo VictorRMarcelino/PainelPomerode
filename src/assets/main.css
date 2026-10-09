@@ -3,7 +3,7 @@
 /* Cores por tema: escuro (padrão, destaque branco) e claro. Os gráficos usam os mesmos
    azuis nos dois temas; as cores neutras deles ficam em components/graficos/configurar.ts. */
 @theme inline {
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --color-fundo: var(--fundo);
   --color-cartao: var(--cartao);

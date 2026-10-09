@@ -2,7 +2,7 @@
 import { alternarTema, tema } from '@/composables/useTema'
 import { formatarData } from '@/utils/formatos'
 
-defineProps<{ atualizadoEm: string }>()
+defineProps<{ atualizadoEm: string; atualizando?: boolean }>()
 </script>
 
 <template>
@@ -21,8 +21,16 @@ defineProps<{ atualizadoEm: string }>()
 
       <div class="flex items-center gap-4">
         <div class="text-left sm:text-right">
-          <p class="text-base font-medium text-texto">
-            Atualizado em <time :datetime="atualizadoEm">{{ formatarData(atualizadoEm) }}</time>
+          <p class="flex items-center gap-2 text-base font-medium text-texto sm:justify-end">
+            <!-- Discreto: aparece só enquanto os meses recentes são buscados no portal em segundo plano. -->
+            <span
+              v-if="atualizando"
+              class="size-3 animate-spin rounded-full border-2 border-borda border-t-texto"
+              role="status"
+              aria-label="Buscando lançamentos recentes no portal"
+              title="Buscando lançamentos recentes no portal"
+            />
+            <span>Atualizado em <time :datetime="atualizadoEm">{{ formatarData(atualizadoEm) }}</time></span>
           </p>
           <p class="text-xs text-suave">
             <span class="font-semibold text-texto">Fonte:</span>{{ ' ' }}

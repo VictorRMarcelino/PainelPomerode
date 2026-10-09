@@ -1,6 +1,5 @@
 // RF06 — exportação dos dados brutos do exercício (todas as linhas da API, com o mês de origem).
 import { linhasDeDespesa, semAcento, type LinhaCredor } from '@/dados/calculos'
-import { encurtarOrgao } from '@/utils/formatos'
 import { ESQUEMAS, MESES, type Endpoint, type Exercicio, type Receita } from '@/dados/esquema'
 import { baixarCsv, gerarCsv, type ColunaCsv } from './csv'
 
@@ -50,7 +49,7 @@ export function exportarReceitas(ex: Exercicio) {
 
 // RF05: exporta todas as linhas da tabela de credores com o filtro e a ordenação aplicados.
 export function exportarCredores(linhas: LinhaCredor[], exercicio: number, secretaria: string) {
-  const sufixo = secretaria ? `-${semAcento(encurtarOrgao(secretaria)).replace(/[^a-z0-9]+/g, '-')}` : ''
+  const sufixo = secretaria ? `-${semAcento(secretaria).replace(/[^a-z0-9]+/g, '-')}` : ''
   const colunasCredor: ColunaCsv<LinhaCredor>[] = [
     { titulo: 'Exercício', valor: () => String(exercicio) },
     { titulo: 'Posição', valor: (l) => String(l.posicao) },

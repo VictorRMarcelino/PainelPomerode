@@ -7,7 +7,7 @@ import { neutros, rotulosAoLado, SERIES } from './configurar'
 import BotaoCsv from '@/components/BotaoCsv.vue'
 import { useContagem } from '@/composables/useContagem'
 import type { ValorPorOrgao } from '@/dados/calculos'
-import { encurtarOrgao, formatarMilhoes, formatarMoeda, formatarPercentual } from '@/utils/formatos'
+import { formatarMilhoes, formatarMoeda, formatarPercentual } from '@/utils/formatos'
 
 const props = defineProps<{
   exercicio: number
@@ -20,6 +20,7 @@ defineEmits<{ exportar: [] }>()
 const MAXIMO_DE_BARRAS = 7
 
 // Os maiores órgãos aparecem sozinhos; o restante vira "Demais órgãos".
+// Todas as barras, inclusive "Demais órgãos", ficam do maior para o menor valor.
 const barras = computed(() => {
   if (props.porOrgao.length <= MAXIMO_DE_BARRAS) return props.porOrgao.map((o) => ({ ...o, agrupados: [] as string[] }))
   const principais = props.porOrgao.slice(0, MAXIMO_DE_BARRAS - 1)
@@ -28,10 +29,11 @@ const barras = computed(() => {
     ...principais.map((o) => ({ ...o, agrupados: [] as string[] })),
     {
       nome: 'Demais órgãos',
+      nomeCompleto: 'Demais órgãos',
       valor: demais.reduce((soma, o) => soma + o.valor, 0),
       agrupados: demais.map((o) => o.nome),
     },
-  ]
+  ].sort((a, b) => b.valor - a.valor)
 })
 
 // Critério de aceite do RF02: a soma do gráfico confere com o total pago.
@@ -41,7 +43,7 @@ const diferenca = computed(() =>
 )
 
 const dados = computed<ChartData<'bar'>>(() => ({
-  labels: barras.value.map((b) => encurtarOrgao(b.nome)),
+  labels: barras.value.map((b) => b.nome),
   datasets: [
     {
       data: barras.value.map((b) => b.valor),
@@ -68,10 +70,12 @@ const opcoes = computed<ChartOptions<'bar'>>(() => ({
       ticks: {
         color: neutros.value.texto,
         font: { size: 12 },
-        // Nomes longos são cortados conforme a largura disponível (o nome completo aparece no tooltip).
+        // Nomes alinhados à esquerda, como uma lista.
+        crossAlign: 'far',
+        // Por segurança, nomes longos são cortados em telas estreitas (o nome completo aparece no tooltip).
         callback(_valor, indice) {
-          const nome = encurtarOrgao(barras.value[indice]!.nome)
-          const limite = this.chart.width < 480 ? 13 : 30
+          const nome = barras.value[indice]!.nome
+          const limite = this.chart.width < 480 ? 18 : 30
           return nome.length > limite ? `${nome.slice(0, limite - 1)}…` : nome
         },
       },
@@ -82,7 +86,7 @@ const opcoes = computed<ChartOptions<'bar'>>(() => ({
     tooltip: {
       displayColors: false,
       callbacks: {
-        title: (itens) => barras.value[itens[0]!.dataIndex]!.nome,
+        title: (itens) => barras.value[itens[0]!.dataIndex]!.nomeCompleto,
         label: (item) => {
           const valor = Number(item.raw)
           const fatia = props.totalPago ? valor / props.totalPago : 0
@@ -90,7 +94,7 @@ const opcoes = computed<ChartOptions<'bar'>>(() => ({
         },
         afterLabel: (item) => {
           const agrupados = barras.value[item.dataIndex]!.agrupados
-          return agrupados.length ? `${agrupados.length} órgãos agrupados` : ''
+          return agrupados.length ? `${agrupados.length} órgãos: ${agrupados.join(', ')}` : ''
         },
       },
     },
@@ -141,21 +145,7 @@ const totalAnimado = useContagem(() => props.totalPago)
       </span>
     </p>
 
-    <details class="text-sm">
-      <summary class="cursor-pointer text-suave hover:text-texto">Ver todos os órgãos em tabela</summary>
-      <table class="mt-2 w-full text-left text-xs">
-        <thead class="text-apagado">
-          <tr><th class="py-1 font-medium">Órgão</th><th class="py-1 text-right font-medium">Pago</th></tr>
-        </thead>
-        <tbody>
-          <tr v-for="orgao in porOrgao" :key="orgao.nome" class="border-t border-borda">
-            <td class="py-1.5 pr-2 text-texto">{{ orgao.nome }}</td>
-            <td class="py-1.5 text-right text-texto tabular-nums">{{ formatarMoeda(orgao.valor) }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </details>
 
-    <BotaoCsv class="mt-auto self-start" @click="$emit('exportar')">Exportar CSV das despesas de {{ exercicio }}</BotaoCsv>
+    <BotaoCsv class="mt-auto self-start" @click="$emit('exportar')">Exportar CSV</BotaoCsv>
   </section>
 </template>

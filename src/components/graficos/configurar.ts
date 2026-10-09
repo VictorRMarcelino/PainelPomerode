@@ -18,7 +18,7 @@ const NEUTROS = {
 
 export const neutros = computed(() => NEUTROS[tema.value])
 
-Chart.defaults.font.family = "'Inter', system-ui, sans-serif"
+Chart.defaults.font.family = "'Poppins', system-ui, sans-serif"
 Chart.defaults.font.size = 12
 // Ao montar (inclusive na troca de exercício) as barras crescem a partir do zero.
 // Altera as propriedades em vez de trocar o objeto: substituir `Chart.defaults.animation`
@@ -52,7 +52,7 @@ watch(
   { immediate: true },
 )
 
-// O Chart.js mede os rótulos com a fonte disponível no momento; quando a Inter termina
+// O Chart.js mede os rótulos com a fonte disponível no momento; quando a Poppins termina
 // de carregar, os gráficos são redesenhados para os nomes não ficarem cortados.
 document.fonts?.ready.then(redesenharTodos)
 

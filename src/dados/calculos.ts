@@ -1,10 +1,14 @@
-// Regras de cálculo do painel (RF02, RF03 e RF04). Funções puras sobre um exercício.
-// As mesmas regras aparecem nas notas explicativas da tela.
+// Regras de cálculo do painel (RF02 a RF05). Funções puras sobre um exercício.
+// Órgãos são agrupados pelo nome simples (ver orgaos.ts), que ignora diferenças de acento da API.
 
 import { MESES, type Despesa, type Exercicio } from './esquema.ts'
+import { melhorGrafia, nomeSimplesOrgao } from './orgaos.ts'
+
+export { semAcento } from './orgaos.ts'
 
 export interface ValorPorOrgao {
-  nome: string
+  nome: string // nome simples, ex.: "Educação"
+  nomeCompleto: string // ex.: "Secretaria de Educação e Formação Empreendedora"
   valor: number
 }
 
@@ -26,15 +30,12 @@ export interface ResumoExercicio {
   populacao: { ano: number; habitantes: number } | null
 }
 
-export const semAcento = (texto: string) =>
-  texto.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
-
 // RF05 — credor agrupado pelo CPF/CNPJ, com o valor pago por órgão no exercício.
 export interface Credor {
   documento: string
   nome: string
   total: number
-  porOrgao: Record<string, number>
+  porOrgao: Record<string, number> // chave: nome simples do órgão
 }
 
 // Linha da tabela do RF05 (valor e participação dentro do filtro de secretaria aplicado).
@@ -60,7 +61,8 @@ export function credoresDoExercicio(ex: Exercicio): Credor[] {
         credores.set(chave, credor)
       }
       credor.total += d.valorPago
-      credor.porOrgao[d.orgaoDescricao] = (credor.porOrgao[d.orgaoDescricao] ?? 0) + d.valorPago
+      const orgao = nomeSimplesOrgao(d.orgaoDescricao)
+      credor.porOrgao[orgao] = (credor.porOrgao[orgao] ?? 0) + d.valorPago
     }
   }
   return [...credores.values()].filter((c) => Math.abs(c.total) >= 0.005)
@@ -90,6 +92,7 @@ export function resumir(
   hoje = new Date(),
 ): ResumoExercicio {
   const pagoPorOrgao = new Map<string, number>()
+  const nomesCompletos = new Map<string, string>()
   let totalPago = 0
   let totalArrecadado = 0
 
@@ -98,7 +101,9 @@ export function resumir(
     let despesa = 0
     for (const d of dados?.despesas ?? []) {
       despesa += d.valorPago
-      pagoPorOrgao.set(d.orgaoDescricao, (pagoPorOrgao.get(d.orgaoDescricao) ?? 0) + d.valorPago)
+      const orgao = nomeSimplesOrgao(d.orgaoDescricao)
+      pagoPorOrgao.set(orgao, (pagoPorOrgao.get(orgao) ?? 0) + d.valorPago)
+      nomesCompletos.set(orgao, melhorGrafia(nomesCompletos.get(orgao), d.orgaoDescricao))
     }
     // Receita líquida: as deduções (contas 9...) já vêm negativas da API.
     const receita = (dados?.receitas ?? []).reduce((soma, r) => soma + r.valorArrecadado, 0)
@@ -108,13 +113,13 @@ export function resumir(
   })
 
   const porOrgao = [...pagoPorOrgao]
-    .map(([nome, valor]) => ({ nome, valor }))
+    .map(([nome, valor]) => ({ nome, nomeCompleto: nomesCompletos.get(nome) ?? nome, valor }))
     .filter((o) => o.valor !== 0)
     .sort((a, b) => b.valor - a.valor)
 
-  const orgaoCom = (termo: string) => {
-    const orgao = porOrgao.find((o) => semAcento(o.nome).includes(termo))
-    return { orgao: orgao?.nome ?? null, valor: orgao?.valor ?? 0 }
+  const orgaoChamado = (nome: string) => {
+    const orgao = porOrgao.find((o) => o.nome === nome)
+    return { orgao: orgao?.nomeCompleto ?? null, valor: orgao?.valor ?? 0 }
   }
 
   return {
@@ -124,8 +129,8 @@ export function resumir(
     porOrgao,
     porMes,
     orcadoDespesa: ex.orcado ? ex.orcado.despesas.reduce((soma, d) => soma + d.valorOrcado, 0) : null,
-    saude: orgaoCom('saude'),
-    educacao: orgaoCom('educacao'),
+    saude: orgaoChamado('Saúde'),
+    educacao: orgaoChamado('Educação'),
     populacao: escolherPopulacao(populacao, ex.exercicio),
   }
 }

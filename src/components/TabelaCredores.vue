@@ -4,7 +4,7 @@
 import { computed, ref, watch } from 'vue'
 import BotaoCsv from '@/components/BotaoCsv.vue'
 import { semAcento, type Credor, type LinhaCredor } from '@/dados/calculos'
-import { encurtarOrgao, formatarInteiro, formatarPercentual, formatarReais } from '@/utils/formatos'
+import { formatarInteiro, formatarPercentual, formatarReais } from '@/utils/formatos'
 
 const props = defineProps<{
   exercicio: number
@@ -25,7 +25,7 @@ const pagina = ref(1)
 const secretarias = computed(() => {
   const nomes = new Set<string>()
   for (const c of props.credores) for (const orgao of Object.keys(c.porOrgao)) nomes.add(orgao)
-  return [...nomes].sort((a, b) => encurtarOrgao(a).localeCompare(encurtarOrgao(b), 'pt-BR'))
+  return [...nomes].sort((a, b) => a.localeCompare(b, 'pt-BR'))
 })
 
 // Ranking dentro do escopo (todas ou uma secretaria): a posição não muda com a busca nem com a ordenação.
@@ -144,7 +144,7 @@ const posicao = (n: number) => String(n).padStart(2, '0')
           class="w-full cursor-pointer appearance-none truncate rounded-lg border border-borda bg-fundo py-2.5 pr-8 pl-3 text-sm text-texto focus-visible:border-texto focus-visible:outline-none"
         >
           <option value="">Todas as secretarias</option>
-          <option v-for="nome in secretarias" :key="nome" :value="nome">{{ encurtarOrgao(nome) }}</option>
+          <option v-for="nome in secretarias" :key="nome" :value="nome">{{ nome }}</option>
         </select>
         <svg class="pointer-events-none absolute top-1/2 right-3 size-4 -translate-y-1/2 text-suave" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
           <path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z" />
@@ -196,16 +196,11 @@ const posicao = (n: number) => String(n).padStart(2, '0')
               {{ linha.nome }}
               <!-- No celular a secretaria vai embaixo do nome, para a tabela caber sem rolagem lateral. -->
               <span class="mt-0.5 block text-[0.7rem] font-normal text-suave sm:hidden">
-                {{ encurtarOrgao(linha.secretaria) }}<template v-if="linha.outrasSecretarias.length"> +{{ linha.outrasSecretarias.length }}</template>
+                {{ linha.secretaria }}
               </span>
             </td>
             <td class="hidden py-3.5 pr-2 text-suave sm:table-cell">
-              {{ encurtarOrgao(linha.secretaria) }}
-              <span
-                v-if="linha.outrasSecretarias.length"
-                class="ml-1 rounded bg-borda px-1.5 py-0.5 text-[0.68rem] text-suave"
-                :title="linha.outrasSecretarias.map(encurtarOrgao).join(', ')"
-              >+{{ linha.outrasSecretarias.length }}</span>
+              {{ linha.secretaria }}
             </td>
             <td class="py-3.5 pr-2 text-right font-mono text-[0.7rem] whitespace-nowrap text-texto tabular-nums sm:text-sm">{{ formatarReais(linha.valor) }}</td>
             <td class="py-3.5 pr-2 text-right font-mono text-[0.7rem] whitespace-nowrap text-suave tabular-nums sm:pr-3 sm:text-sm">{{ formatarPercentual(linha.participacao, 2) }}</td>

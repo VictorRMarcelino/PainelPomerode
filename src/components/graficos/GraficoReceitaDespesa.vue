@@ -3,7 +3,7 @@
 import { computed } from 'vue'
 import { Bar } from 'vue-chartjs'
 import type { ChartData, ChartOptions } from 'chart.js'
-import { neutros, SERIES } from './configurar'
+import { coresSeries, neutros } from './configurar'
 import BotaoCsv from '@/components/BotaoCsv.vue'
 import type { ValorMensal } from '@/dados/calculos'
 import { MESES_ABREVIADOS, NOMES_MESES, formatarMilhoes, formatarMoeda } from '@/utils/formatos'
@@ -25,15 +25,15 @@ const ultimoMes = computed(() => {
 const saldo = computed(() => props.totalArrecadado - props.totalPago)
 
 const series = computed(() => [
-  { rotulo: 'Receita arrecadada', cor: SERIES.receita, total: props.totalArrecadado },
-  { rotulo: 'Despesa paga', cor: SERIES.despesa, total: props.totalPago },
+  { rotulo: 'Receita arrecadada', cor: coresSeries.value.receita, total: props.totalArrecadado },
+  { rotulo: 'Despesa paga', cor: coresSeries.value.despesa, total: props.totalPago },
 ])
 
 const dados = computed<ChartData<'bar'>>(() => ({
   labels: props.porMes.map((m) => MESES_ABREVIADOS[Number(m.mes) - 1]),
   datasets: [
-    { label: 'Receita arrecadada', data: props.porMes.map((m) => m.receita), backgroundColor: SERIES.receita },
-    { label: 'Despesa paga', data: props.porMes.map((m) => m.despesa), backgroundColor: SERIES.despesa },
+    { label: 'Receita arrecadada', data: props.porMes.map((m) => m.receita), backgroundColor: coresSeries.value.receita },
+    { label: 'Despesa paga', data: props.porMes.map((m) => m.despesa), backgroundColor: coresSeries.value.despesa },
   ].map((serie) => ({
     ...serie,
     borderRadius: 4,

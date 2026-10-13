@@ -190,7 +190,7 @@ const posicao = (n: number) => String(n).padStart(2, '0')
           </tr>
         </thead>
         <tbody>
-          <tr v-for="linha in visiveis" :key="linha.documento + linha.nome" class="border-b border-borda last:border-b-0">
+          <tr v-for="linha in visiveis" :key="linha.documento + linha.nome" class="border-b border-divisoria last:border-b-0">
             <td class="py-3.5 pr-2 pl-2 text-apagado tabular-nums sm:pl-3">{{ posicao(linha.posicao) }}</td>
             <td class="py-3.5 pr-2 font-medium text-texto">
               {{ linha.nome }}
@@ -219,7 +219,7 @@ const posicao = (n: number) => String(n).padStart(2, '0')
       <div class="flex items-center gap-1">
         <button
           type="button"
-          class="rounded-md border border-borda px-2.5 py-1.5 text-suave hover:border-texto hover:text-texto disabled:pointer-events-none disabled:opacity-40"
+          class="rounded-md border border-borda px-2.5 py-1.5 text-suave hover:border-texto hover:text-texto disabled:pointer-events-none disabled:border-divisoria disabled:text-apagado"
           :disabled="pagina === 1"
           @click="pagina--"
         >Anterior</button>
@@ -236,7 +236,7 @@ const posicao = (n: number) => String(n).padStart(2, '0')
         </template>
         <button
           type="button"
-          class="rounded-md border border-borda px-2.5 py-1.5 text-suave hover:border-texto hover:text-texto disabled:pointer-events-none disabled:opacity-40"
+          class="rounded-md border border-borda px-2.5 py-1.5 text-suave hover:border-texto hover:text-texto disabled:pointer-events-none disabled:border-divisoria disabled:text-apagado"
           :disabled="pagina === totalPaginas"
           @click="pagina++"
         >Próxima</button>

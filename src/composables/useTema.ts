@@ -22,7 +22,7 @@ watch(
   tema,
   (atual) => {
     document.documentElement.dataset.tema = atual
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', atual === 'escuro' ? '#08090c' : '#f3f4f6')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', atual === 'escuro' ? '#000000' : '#f3f4f6')
     try {
       localStorage.setItem(CHAVE, atual)
     } catch {

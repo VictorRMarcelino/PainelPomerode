@@ -151,7 +151,7 @@ const cartoes = computed(() => {
             role="status"
           >
             <div class="sticky top-1/3 flex h-fit flex-col items-center gap-3 px-4 pt-24 text-center">
-              <span class="size-10 animate-spin rounded-full border-4 border-borda border-t-texto" aria-hidden="true" />
+              <span class="size-10 animate-spin rounded-full border-4 border-divisoria border-t-texto" aria-hidden="true" />
               <p class="font-medium text-texto">
                 <template v-if="progresso">Consultando o portal da transparência… {{ progresso.feitas }}/{{ progresso.total }}</template>
                 <template v-else>Carregando dados de {{ anoSelecionado }}…</template>

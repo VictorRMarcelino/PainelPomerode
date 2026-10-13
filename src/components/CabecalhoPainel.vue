@@ -25,7 +25,7 @@ defineProps<{ atualizadoEm: string; atualizando?: boolean }>()
             <!-- Discreto: aparece só enquanto os meses recentes são buscados no portal em segundo plano. -->
             <span
               v-if="atualizando"
-              class="size-3 animate-spin rounded-full border-2 border-borda border-t-texto"
+              class="size-3 animate-spin rounded-full border-2 border-divisoria border-t-texto"
               role="status"
               aria-label="Buscando lançamentos recentes no portal"
               title="Buscando lançamentos recentes no portal"

@@ -3,7 +3,7 @@
 import { computed } from 'vue'
 import { Bar } from 'vue-chartjs'
 import type { ChartData, ChartOptions } from 'chart.js'
-import { neutros, rotulosAoLado, SERIES } from './configurar'
+import { coresSeries, neutros, rotulosAoLado } from './configurar'
 import BotaoCsv from '@/components/BotaoCsv.vue'
 import { useContagem } from '@/composables/useContagem'
 import type { ValorPorOrgao } from '@/dados/calculos'
@@ -47,8 +47,8 @@ const dados = computed<ChartData<'bar'>>(() => ({
   datasets: [
     {
       data: barras.value.map((b) => b.valor),
-      backgroundColor: SERIES.receita,
-      hoverBackgroundColor: SERIES.despesa,
+      backgroundColor: coresSeries.value.receita,
+      hoverBackgroundColor: coresSeries.value.destaque,
       borderRadius: 4,
       borderSkipped: 'start',
       barPercentage: 0.7,

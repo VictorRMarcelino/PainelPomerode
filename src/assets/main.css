@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
-/* Cores por tema: escuro (padrão, destaque branco) e claro. Os gráficos usam os mesmos
-   azuis nos dois temas; as cores neutras deles ficam em components/graficos/configurar.ts. */
+/* Cores por tema: escuro de alto contraste (padrão) e claro. No escuro, todo texto e toda borda
+   de cartão, campo ou botão tem contraste mínimo de 7:1 (WCAG AAA) contra o fundo; só as
+   divisórias decorativas (`divisoria`) ficam abaixo disso. As cores dos gráficos ficam em
+   components/graficos/configurar.ts. */
 @theme inline {
   --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --color-fundo: var(--fundo);
   --color-cartao: var(--cartao);
   --color-borda: var(--borda);
+  --color-divisoria: var(--divisoria);
   --color-texto: var(--texto);
   --color-suave: var(--suave);
   --color-apagado: var(--apagado);
@@ -17,13 +20,15 @@
 @layer base {
   :root,
   :root[data-tema="escuro"] {
-    --fundo: #08090c;
-    --cartao: #0f1218;
-    --borda: #1e2430;
-    --texto: #f5f7fa;
-    --suave: #a3acba;
-    --apagado: #6f7888;
-    --azul: #5b95ec;
+    /* contraste sobre o cartão (#0a0a0a) */
+    --fundo: #000000;
+    --cartao: #0a0a0a;
+    --borda: #a6a6a6; /* 8,1:1 */
+    --divisoria: #4d4d4d; /* decorativa: linhas da tabela e trilha dos spinners */
+    --texto: #ffffff; /* 19,8:1 */
+    --suave: #e6e6e6; /* 15,9:1 */
+    --apagado: #c4c4c4; /* 11,4:1 */
+    --azul: #8cb8ff; /* 9,8:1 */
     color-scheme: dark;
   }
 
@@ -31,6 +36,7 @@
     --fundo: #f3f4f6;
     --cartao: #ffffff;
     --borda: #e2e5ea;
+    --divisoria: #e2e5ea;
     --texto: #0d1117;
     --suave: #4b5563;
     --apagado: #6b7280;

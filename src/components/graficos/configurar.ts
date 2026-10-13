@@ -4,18 +4,21 @@ import { tema } from '@/composables/useTema'
 
 Chart.register(BarElement, CategoryScale, LinearScale, Tooltip)
 
-// Séries validadas nos dois temas (fundo #0f1218 e #ffffff): contraste ≥ 3:1 e
-// distinguíveis com daltonismo. Só as cores neutras mudam com o tema.
-export const SERIES = {
-  receita: '#1f56d8',
-  despesa: '#5b95ec',
+// Escuro = alto contraste: barras e textos com no mínimo 7:1 sobre o cartão (#0a0a0a).
+// Um azul escuro não chega a 7:1 no preto, então a receita fica azul-claro (9,8:1) e a despesa
+// âmbar (12,9:1), par que também se distingue com daltonismo. Só a grade fica abaixo (decorativa).
+// Claro: os azuis originais, com contraste ≥ 3:1 sobre o branco.
+const SERIES = {
+  escuro: { receita: '#8cb8ff', despesa: '#ffc94d', destaque: '#ffffff' },
+  claro: { receita: '#1f56d8', despesa: '#5b95ec', destaque: '#5b95ec' },
 }
 
 const NEUTROS = {
-  escuro: { texto: '#f5f7fa', suave: '#a3acba', grade: '#1e2430', tooltip: '#171b24', tooltipBorda: '#2a3140' },
+  escuro: { texto: '#ffffff', suave: '#e6e6e6', grade: '#5c5c5c', tooltip: '#000000', tooltipBorda: '#a6a6a6' },
   claro: { texto: '#0d1117', suave: '#4b5563', grade: '#e5e7eb', tooltip: '#ffffff', tooltipBorda: '#d1d5db' },
 }
 
+export const coresSeries = computed(() => SERIES[tema.value])
 export const neutros = computed(() => NEUTROS[tema.value])
 
 Chart.defaults.font.family = "'Poppins', system-ui, sans-serif"

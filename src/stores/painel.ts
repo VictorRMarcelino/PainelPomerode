@@ -12,7 +12,13 @@ import {
   type IndiceDados,
 } from '@/dados/esquema.ts'
 
-const URL_DADOS = `${import.meta.env.BASE_URL}dados/`
+// O BASE_URL pode vir sem a barra final (ex.: build com --base=/PainelPomerode), o que geraria
+// "/PainelPomerodedados/" e faria o painel cair na consulta lenta à API. Garante a barra.
+const URL_DADOS = `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}dados/`
+
+// Tempo máximo que a tela fica bloqueada esperando a API (requisito: exercício em até 15 s).
+const ESPERA_MAXIMA_MS = 12_000
+const esperar = (ms: number) => new Promise<void>((r) => setTimeout(r, ms))
 
 // Um limitador para a página toda: o limite da API (10/min) vale para o visitante inteiro.
 const limitador = criarLimitador()
@@ -140,9 +146,27 @@ export const usePainelStore = defineStore('painel', () => {
     const ex = await aguardar(carregamento)
 
     exibir(ex)
-    // Sem cópia local, a tela espera a API; com cópia, a atualização roda em segundo plano.
+    // Com cópia local, a atualização roda em segundo plano. Sem cópia (contingência), a tela espera
+    // a API no máximo ESPERA_MAXIMA_MS: com o limite de 10 consultas/min, o ano inteiro levaria
+    // minutos. Depois disso mostra o que já chegou e continua completando em segundo plano.
     const sincronizacao = sincronizar(ex)
-    if (Object.keys(ex.meses).length === 0) await aguardar(sincronizacao)
+    if (Object.keys(ex.meses).length > 0) return
+    const terminou = await aguardar(
+      Promise.race([sincronizacao.then(() => true), esperar(ESPERA_MAXIMA_MS).then(() => false)]),
+    )
+    if (!terminou && ano.value === novoAno) {
+      progresso.value = undefined
+      void Swal.fire({
+        toast: true,
+        position: 'bottom-end',
+        icon: 'info',
+        title: `Carregando ${novoAno} direto do portal`,
+        text: 'Os meses aparecem conforme chegam; o portal aceita 10 consultas por minuto.',
+        theme: temaDoAlerta(),
+        timer: 8000,
+        showConfirmButton: false,
+      })
+    }
   }
 
   return {

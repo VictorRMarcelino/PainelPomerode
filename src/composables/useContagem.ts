@@ -19,7 +19,9 @@ export function useContagem(alvo: () => number, duracaoMs = 700): Ref<number> {
       const origem = atual.value
       const inicio = performance.now()
       const passo = (agora: number) => {
-        const progresso = Math.min(1, (agora - inicio) / duracaoMs)
+        // O horário do quadro pode vir um pouco antes de `inicio`; sem o limite inferior a conta
+        // ficaria negativa e o cartão mostraria um valor negativo no primeiro quadro.
+        const progresso = Math.min(1, Math.max(0, (agora - inicio) / duracaoMs))
         atual.value = origem + (destino - origem) * (1 - (1 - progresso) ** 4)
         if (progresso < 1) quadro = requestAnimationFrame(passo)
       }

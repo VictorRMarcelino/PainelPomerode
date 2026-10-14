@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { alternarTema, tema } from '@/composables/useTema'
 import { formatarData } from '@/utils/formatos'
+import logo from '@/assets/logo.png'
 
 defineProps<{ atualizadoEm: string; atualizando?: boolean }>()
 </script>
@@ -9,10 +10,7 @@ defineProps<{ atualizadoEm: string; atualizando?: boolean }>()
   <header class="border-b border-borda bg-cartao transition-colors">
     <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
       <div class="flex items-center gap-3">
-        <svg class="size-10 text-texto" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
-          <path d="M6 15 20 6l14 9" stroke-linejoin="round" />
-          <path d="M9 15h22M11 18v12M17 18v12M23 18v12M29 18v12M7 33h26" stroke-linecap="round" />
-        </svg>
+        <img :src="logo" alt="" class="size-12 shrink-0 rounded-full" width="128" height="128" />
         <div>
           <p class="text-xl leading-tight font-semibold text-texto">Painel Pomerode</p>
           <p class="text-sm text-suave">Município de Pomerode</p>

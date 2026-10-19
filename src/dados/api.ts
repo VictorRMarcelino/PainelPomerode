@@ -23,8 +23,28 @@ const DIAS_PARA_FECHAR = 35
 
 const esperar = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
+// A consulta foi cancelada porque outra já falhou (ver `pararNaPrimeiraFalha`).
+export class ConsultaCancelada extends Error {}
+
+// Espera `ms`, mas desiste na hora se o sinal for cancelado.
+function esperarOuCancelar(ms: number, sinal?: AbortSignal): Promise<void> {
+  return new Promise((resolver, rejeitar) => {
+    if (sinal?.aborted) return rejeitar(new ConsultaCancelada())
+    const cancelar = () => {
+      clearTimeout(relogio)
+      rejeitar(new ConsultaCancelada())
+    }
+    const relogio = setTimeout(() => {
+      sinal?.removeEventListener('abort', cancelar)
+      resolver()
+    }, ms)
+    sinal?.addEventListener('abort', cancelar, { once: true })
+  })
+}
+
 export interface Limitador {
-  executar<T>(tarefa: () => Promise<T>): Promise<T>
+  // Com `sinal`, uma consulta cancelada desiste antes de ocupar vaga na janela de 10/min.
+  executar<T>(tarefa: () => Promise<T>, sinal?: AbortSignal): Promise<T>
   // Segura todas as próximas requisições (usado quando a API responde 429).
   pausar(ms: number): void
 }
@@ -35,12 +55,13 @@ export function criarLimitador(simultaneas = SIMULTANEAS, porMinuto = POR_MINUTO
   const envios: number[] = []
   let pausadoAte = 0
 
-  async function aguardarJanela() {
+  async function aguardarJanela(sinal?: AbortSignal) {
     for (;;) {
+      if (sinal?.aborted) throw new ConsultaCancelada()
       const agora = Date.now()
       while (envios.length && agora - envios[0]! >= JANELA_MS) envios.shift()
-      if (agora < pausadoAte) await esperar(pausadoAte - agora)
-      else if (envios.length >= porMinuto) await esperar(envios[0]! + JANELA_MS - agora + 250)
+      if (agora < pausadoAte) await esperarOuCancelar(pausadoAte - agora, sinal)
+      else if (envios.length >= porMinuto) await esperarOuCancelar(envios[0]! + JANELA_MS - agora + 250, sinal)
       else {
         envios.push(agora)
         return
@@ -49,12 +70,12 @@ export function criarLimitador(simultaneas = SIMULTANEAS, porMinuto = POR_MINUTO
   }
 
   return {
-    async executar(tarefa) {
+    async executar(tarefa, sinal) {
       // A vaga é repassada direto para quem está na fila, sem passar pelo contador.
       if (ativos < simultaneas) ativos++
       else await new Promise<void>((liberar) => fila.push(liberar))
       try {
-        await aguardarJanela()
+        await aguardarJanela(sinal)
         return await tarefa()
       } finally {
         const proximo = fila.shift()
@@ -70,12 +91,21 @@ export function criarLimitador(simultaneas = SIMULTANEAS, porMinuto = POR_MINUTO
 
 class LimiteExcedido extends Error {}
 
+export interface OpcoesConsulta {
+  tentativas?: number
+  // Repetir também falhas de conexão e erros da API. O limite 429 sempre é repetido, após a pausa.
+  repetirFalhas?: boolean
+  timeoutMs?: number
+  sinal?: AbortSignal
+}
+
 export async function consultar<E extends Endpoint>(
   endpoint: E,
   parametros: Record<string, string>,
   limitador: Limitador,
-  tentativas = 5,
+  opcoes: OpcoesConsulta = {},
 ) {
+  const { tentativas = 5, repetirFalhas = true, timeoutMs = 60_000, sinal } = opcoes
   // As datas vão sem codificar: a API recusa "%2F" no lugar de "/".
   const query = Object.entries(parametros)
     .map(([k, v]) => `${k}=${v}`)
@@ -83,11 +113,14 @@ export async function consultar<E extends Endpoint>(
   const url = `${API_BASE}/${endpoint}?${query}`
 
   for (let tentativa = 1; ; tentativa++) {
+    if (sinal?.aborted) throw new ConsultaCancelada()
     try {
       return await limitador.executar(async () => {
+        if (sinal?.aborted) throw new ConsultaCancelada()
+        const tempoEsgotado = AbortSignal.timeout(timeoutMs)
         const resposta = await fetch(url, {
           headers: { Accept: 'application/json' },
-          signal: AbortSignal.timeout(60_000),
+          signal: sinal ? AbortSignal.any([sinal, tempoEsgotado]) : tempoEsgotado,
         })
         const corpo = (await resposta.json().catch(() => ({}))) as {
           status?: string
@@ -100,13 +133,15 @@ export async function consultar<E extends Endpoint>(
           throw new Error(msg ?? `HTTP ${resposta.status}`)
         }
         return corpo.retorno.map((bruto) => normalizar(endpoint, bruto))
-      })
+      }, sinal)
     } catch (erro) {
-      if (tentativa >= tentativas) {
+      if (erro instanceof ConsultaCancelada || sinal?.aborted) throw new ConsultaCancelada()
+      const limite = erro instanceof LimiteExcedido
+      if (tentativa >= tentativas || (!limite && !repetirFalhas)) {
         const motivo = erro instanceof Error ? erro.message : String(erro)
         throw new Error(`Falha ao consultar ${endpoint} (${query}): ${motivo}`)
       }
-      if (erro instanceof LimiteExcedido) limitador.pausar(JANELA_MS)
+      if (limite) limitador.pausar(JANELA_MS)
       else await esperar(1500 * tentativa)
     }
   }
@@ -156,26 +191,26 @@ export function pendencias(ex: Exercicio, hoje = dataISO()): number {
   return mesesPendentes(ex, hoje).length + (orcadoPendente(ex, hoje) ? 1 : 0)
 }
 
-async function consultarMes(ano: number, mes: string, limitador: Limitador): Promise<DadosMes> {
+async function consultarMes(ano: number, mes: string, limitador: Limitador, opcoes: OpcoesConsulta): Promise<DadosMes> {
   const m = Number(mes)
   const periodo = {
     dataInicial: paraApi(new Date(ano, m - 1, 1)),
     dataFinal: paraApi(ultimoDiaDoMes(ano, m)),
   }
   const [despesas, receitas] = await Promise.all([
-    consultar('despesas', periodo, limitador),
-    consultar('receitas', periodo, limitador),
+    consultar('despesas', periodo, limitador, opcoes),
+    consultar('receitas', periodo, limitador, opcoes),
   ])
   return { consultadoEm: dataISO(), despesas, receitas }
 }
 
-async function consultarOrcado(ano: number, limitador: Limitador): Promise<DadosOrcado> {
+async function consultarOrcado(ano: number, limitador: Limitador, opcoes: OpcoesConsulta): Promise<DadosOrcado> {
   const fimDoAno = new Date(ano, 11, 31)
   const hoje = new Date()
   const parametros = { dataFinal: paraApi(hoje < fimDoAno ? hoje : fimDoAno) }
   const [despesas, receitas] = await Promise.all([
-    consultar('despesasOrcadas', parametros, limitador),
-    consultar('receitasOrcadas', parametros, limitador),
+    consultar('despesasOrcadas', parametros, limitador, opcoes),
+    consultar('receitasOrcadas', parametros, limitador, opcoes),
   ])
   return { consultadoEm: dataISO(), despesas, receitas }
 }
@@ -184,34 +219,53 @@ export interface OpcoesAtualizacao {
   limitador?: Limitador
   // Chamado a cada mês (ou orçamento) concluído, para gravar/exibir o progresso.
   aoConcluir?: (ex: Exercicio, parte: string) => void | Promise<void>
+  // Chamado uma vez, na primeira falha (para o site avisar na hora).
+  aoFalhar?: (erro: Error) => void
+  // Site: na primeira falha que não seja o limite 429, cancela as demais consultas em vez de
+  // repetir. Script de coleta: deixa desligado, para tentar de novo em falhas momentâneas.
+  pararNaPrimeiraFalha?: boolean
+  timeoutMs?: number
 }
 
-// Consulta só o que falta ou pode ter mudado. Altera `ex` no lugar e devolve os erros
-// (um mês que falhar não impede os outros de serem gravados).
+// Consulta só o que falta ou pode ter mudado. Altera `ex` no lugar e devolve os erros. No script,
+// um mês que falhar não impede os outros de serem gravados; no site (`pararNaPrimeiraFalha`), a
+// primeira falha cancela o restante para o aviso aparecer na hora.
 export async function atualizarExercicio(ex: Exercicio, opcoes: OpcoesAtualizacao = {}): Promise<Error[]> {
   const limitador = opcoes.limitador ?? criarLimitador()
   const erros: Error[] = []
   const tarefas: Promise<void>[] = []
+  const cancelamento = new AbortController()
+  const consulta: OpcoesConsulta = {
+    repetirFalhas: !opcoes.pararNaPrimeiraFalha,
+    timeoutMs: opcoes.timeoutMs,
+    sinal: opcoes.pararNaPrimeiraFalha ? cancelamento.signal : undefined,
+  }
+  const falhou = (erro: Error) => {
+    if (erro instanceof ConsultaCancelada) return
+    erros.push(erro)
+    if (erros.length === 1) opcoes.aoFalhar?.(erro)
+    if (opcoes.pararNaPrimeiraFalha) cancelamento.abort()
+  }
 
   for (const mes of mesesPendentes(ex)) {
     tarefas.push(
-      consultarMes(ex.exercicio, mes, limitador).then(
+      consultarMes(ex.exercicio, mes, limitador, consulta).then(
         async (dados) => {
           ex.meses[mes] = dados
           await opcoes.aoConcluir?.(ex, `mês ${mes}`)
         },
-        (erro: Error) => void erros.push(erro),
+        falhou,
       ),
     )
   }
   if (orcadoPendente(ex)) {
     tarefas.push(
-      consultarOrcado(ex.exercicio, limitador).then(
+      consultarOrcado(ex.exercicio, limitador, consulta).then(
         async (dados) => {
           ex.orcado = dados
           await opcoes.aoConcluir?.(ex, 'orçamento')
         },
-        (erro: Error) => void erros.push(erro),
+        falhou,
       ),
     )
   }

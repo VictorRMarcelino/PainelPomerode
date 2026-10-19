@@ -11,6 +11,7 @@ import {
   type Exercicio,
   type IndiceDados,
 } from '@/dados/esquema.ts'
+import { formatarData } from '@/utils/formatos'
 
 // O BASE_URL pode vir sem a barra final (ex.: build com --base=/PainelPomerode), o que geraria
 // "/PainelPomerodedados/" e faria o painel cair na consulta lenta à API. Garante a barra.
@@ -18,6 +19,8 @@ const URL_DADOS = `${import.meta.env.BASE_URL.replace(/\/?$/, '/')}dados/`
 
 // Tempo máximo que a tela fica bloqueada esperando a API (requisito: exercício em até 15 s).
 const ESPERA_MAXIMA_MS = 12_000
+// Uma consulta normal leva de 2 a 5 s; acima disso o portal é tratado como fora do ar.
+const TEMPO_LIMITE_CONSULTA_MS = 15_000
 const esperar = (ms: number) => new Promise<void>((r) => setTimeout(r, ms))
 
 // Um limitador para a página toda: o limite da API (10/min) vale para o visitante inteiro.
@@ -90,41 +93,23 @@ export const usePainelStore = defineStore('painel', () => {
     const total = pendencias(ex)
     if (total === 0) return Promise.resolve()
 
-    const temDados = Object.keys(ex.meses).length > 0
+    // Data em que a cópia local foi gerada (vazia quando não há cópia do exercício).
+    const dataCopia = Object.keys(ex.meses).length > 0 ? dataMaisRecente(ex) : ''
     atualizandoAoVivo.value = true
-    if (!temDados) progresso.value = { feitas: 0, total }
+    if (!dataCopia) progresso.value = { feitas: 0, total }
 
     const tarefa = atualizarExercicio(ex, {
       limitador,
+      // Na primeira falha (que não seja o limite 429) o restante é cancelado e o aviso sai na hora.
+      pararNaPrimeiraFalha: true,
+      timeoutMs: TEMPO_LIMITE_CONSULTA_MS,
       aoConcluir: (atual) => {
         if (progresso.value) progresso.value = { ...progresso.value, feitas: progresso.value.feitas + 1 }
         exibir(atual)
       },
+      aoFalhar: (erro) => avisarFalha(ex.exercicio, dataCopia, erro),
     })
-      .then((erros) => {
-        if (erros.length === 0) return
-        console.warn('[Painel] Falhas ao consultar a API:', erros)
-        if (Object.keys(ex.meses).length === 0) {
-          void Swal.fire({
-            icon: 'error',
-            title: 'Não foi possível carregar os dados',
-            text: `O portal da transparência não respondeu para o exercício de ${ex.exercicio}. Tente novamente em alguns minutos.`,
-            theme: temaDoAlerta(),
-            confirmButtonText: 'Entendi',
-          })
-        } else {
-          void Swal.fire({
-            toast: true,
-            position: 'bottom-end',
-            icon: 'warning',
-            title: 'Exibindo a última cópia salva',
-            text: 'O portal não respondeu agora; os meses mais recentes podem estar desatualizados.',
-            theme: temaDoAlerta(),
-            timer: 6000,
-            showConfirmButton: false,
-          })
-        }
-      })
+      .then(() => undefined)
       .finally(() => {
         sincronizacoes.delete(ex.exercicio)
         if (sincronizacoes.size === 0) atualizandoAoVivo.value = false
@@ -133,6 +118,34 @@ export const usePainelStore = defineStore('painel', () => {
 
     sincronizacoes.set(ex.exercicio, tarefa)
     return tarefa
+  }
+
+  // RNF03 e RNF05: avisos quando o portal não responde.
+  function avisarFalha(exercicio: number, dataCopia: string, erro: Error) {
+    console.warn('[Painel] Falha ao consultar a API:', erro)
+    progresso.value = undefined
+    if (dataCopia) {
+      // Contingência: a tela já mostra a cópia local; o aviso diz de quando ela é.
+      void Swal.fire({
+        toast: true,
+        position: 'bottom-end',
+        icon: 'warning',
+        title: 'Exibindo a última cópia salva',
+        text: `O portal da transparência não respondeu. Os dados são da cópia gerada em ${formatarData(dataCopia)}.`,
+        theme: temaDoAlerta(),
+        timer: 10_000,
+        timerProgressBar: true,
+        showConfirmButton: false,
+      })
+    } else {
+      void Swal.fire({
+        icon: 'error',
+        title: 'Não foi possível carregar os dados',
+        text: `O portal da transparência não respondeu e não há cópia salva do exercício de ${exercicio}. Tente novamente em alguns minutos.`,
+        theme: temaDoAlerta(),
+        confirmButtonText: 'Entendi',
+      })
+    }
   }
 
   // RF01: troca o exercício; toda a tela deriva de `exercicio`.
